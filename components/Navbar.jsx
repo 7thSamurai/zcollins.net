@@ -1,30 +1,35 @@
 import React, { useState } from 'react'
 import { AiOutlineMenu, AiOutlineClose} from 'react-icons/ai'
 import { navLinks } from '@/constants'
+import { Button } from '.'
 
 const Navbar = () => {
+  {/* Mobile drop-down menu status */}
   const [toggle, setToggle] = useState(false);
 
   return (
-    <nav className='w-full items-center py-6 px-4 mb-12 flex justify-between bg-gradient-to-b from-gray-400 to-slate-300 shadow-lg'>
+    <nav className='w-full items-center py-6 px-4 mb-12 flex justify-between'>
+      {/* Logo */}
       <a href='#' className='cursor-pointer flex flex-row'>
-        <img src='' alt='ZC' className='h-[32px] mx-5'/>
-        <h1 className='text-xl mx-5'>ZCollins.net</h1>
+        <img src='' alt='ZC' className='h-[32px] mx-10'/>
       </a>
 
-      <ul className='list-none sm:flex hidden justify-end items-center flex-1'>
-        {navLinks.map((nav, index) => (
-          <li key={nav.id} className={'cursor-pointer text-[16px] mr-10'} title={nav.title}>
-            <a href={`#${nav.id}`}>{nav.title}</a>
-          </li>
-        ))}
+      {/* Desktop menu */}
+      <div className='sm:flex hidden flex-1'>
+        <ul className='list-none items-center flex flex-1 justify-start'>
+          {navLinks.map((nav, index) => (
+            <li key={nav.id} className={'text-gray-600 hover:text-black cursor-pointer text-[18px] mr-10'} title={nav.title}>
+              <a href={`#${nav.id}`}>{nav.title}</a>
+            </li>
+          ))}
+        </ul>
 
-        <li>
-          <a href='#' title='Hire me!' className='bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md'>Hire</a>
-        </li>
-      </ul>
+        <Button style='justify-end' title='Hire'/>
+      </div>
 
+      {/* Mobile menu*/}
       <div className='sm:hidden flex flex-1 justify-end items-center'>
+        {/* Drop down button*/}
         <div onClick={() => setToggle((prev) => !prev)}>
           {toggle
             ? <AiOutlineClose className='w-[28px] h-[28px] object-contain'/>
@@ -41,7 +46,7 @@ const Navbar = () => {
             ))}
 
             <li>
-              <a href='#' title='Hire me!' className='bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md'>Hire</a>
+            <Button title='Hire'/>
             </li>
           </ul>
         </div>

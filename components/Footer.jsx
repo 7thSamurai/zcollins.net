@@ -6,7 +6,7 @@ const Footer = () => (
     <div className='w-full flex justify-between items-center md:flex-row flex-col pt-6 border-t-[1px] border-t-gray-300'>
       <div>
         <p className='text-center'>
-          Copyright &copy; 2023 Zachary Collins
+          Copyright &copy; {(new Date().getFullYear())} Zachary Collins.
         </p>
       </div>
 

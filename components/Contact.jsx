@@ -13,7 +13,9 @@ function Contact() {
       <div className='flex flex-row items-center'>
         <div>
           {contactInfo.map((contact) => (
-            <h3 className='text-2xl'>{contact.name}:</h3>
+            <h3 className='flex flex-row text-2xl items-center'>
+              {contact.icon} &nbsp; {contact.name}:
+            </h3>
           ))}
         </div>
 

@@ -6,8 +6,8 @@ import { socialMedia } from '@/constants'
 const About = () => (
   <section>
     <div className='text-center p-10'>
-      <h2 className='text-5xl py-2 font-medium md:text-6xl'>Zach Collins</h2>
-      <h3 className='text-2xl py-2 md:text-3xl'>Software Developer</h3>
+      <h1 className='text-5xl py-2 font-bold md:text-6xl font-redhat'>Zach Collins</h1>
+      <h2 className='text-2xl py-2 md:text-3xl'>Software Developer</h2>
 
       {/* About me summary */}
       <p className='text-md py-5 leading-8 text-gray-800 md:text-xl max-w-xl mx-auto'>

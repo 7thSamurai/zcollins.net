@@ -15,7 +15,7 @@ export default function Home() {
       <main className='bg-white flex flex-col h-screen'>
         <Navbar/>
 
-        <section className='flex flex-col px-10 md:px-20 lg:px-40 h-screen justify-between'>
+        <section className='flex flex-col px-4 md:px-20 lg:px-40 xl:px-60 h-screen justify-between'>
           <About/>
           <Contact/>
 

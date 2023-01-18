@@ -13,13 +13,13 @@ const Footer = () => (
 
       {/* Contact info */}
       <div>
-        <a href = 'mailto:contact@zcollins.net' className='text-center'>contact@zcollins.net</a>
+        <a href = 'mailto:contact@zcollins.net' className='text-center hover:underline'>contact@zcollins.net</a>
       </div>
 
       {/* Social Media */}
       <div className='flex flex-row mt-6 md:mt-0 mb-10'>
         {socialMedia.map((social, index) => (
-          <a key={social.name} title={social.name} href={social.link} className={`text-teal-500 hover:text-teal-600 text-[21px] object-contain ${index !== socialMedia.length -1 ? 'mr-6' : 'mr-0'}`}>
+          <a key={social.name} title={social.name} href={social.link} className={`text-teal-500 hover:text-teal-600 text-[32px] object-contain ${index !== socialMedia.length -1 ? 'mr-6' : 'mr-0'}`}>
             {social.icon}
           </a>
         ))}

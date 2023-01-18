@@ -12,12 +12,11 @@ export default function Home() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
 
-      <main className='bg-white px-10 md:px-20 lg:px-40'>
-        <section className='flex flex-col h-screen justify-between'>
-          <div>
-            <Navbar/>
-            <About/>
-          </div>
+      <main className='bg-white flex flex-col h-screen'>
+        <Navbar/>
+
+        <section className='flex flex-col px-10 md:px-20 lg:px-40 h-screen justify-between'>
+          <About/>
 
           <Footer/>
         </section>

@@ -1,5 +1,24 @@
 import { AiFillGithub, AiFillTwitterCircle, AiFillLinkedin } from 'react-icons/ai'
 
+export const navLinks = [
+    {
+        id: 'about',
+        title: 'About',
+    },
+    {
+        id: 'blog',
+        title: 'Blog',
+    },
+    {
+        id: 'resume',
+        title: 'Resume',
+    },
+    {
+        id: 'projects',
+        title: 'Projects',
+    },
+];
+
 export const socialMedia = [
     {
         name: 'GitHub',

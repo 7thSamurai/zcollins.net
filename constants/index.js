@@ -36,3 +36,21 @@ export const socialMedia = [
         link: 'https://linkedin.com/in/zcol',
     },
 ];
+
+export const contactInfo = [
+    {
+        name: 'Email',
+        text: 'contact@zcollins.net',
+        info: 'mailto:contact@zcollins.net',
+    },
+    {
+        name: 'Phone',
+        text: '(+1) 222-333-4444',
+        info: 'tel:+1-222-333-444',
+    },
+    {
+        name: 'Twitter',
+        text: '@zcollinsdev',
+        info: 'https://twitter.com/zcollinsdev',
+    },
+];

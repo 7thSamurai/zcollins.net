@@ -2,7 +2,7 @@ import React from 'react'
 import { socialMedia } from '@/constants'
 
 const Footer = () => (
-  <section className='flex-col md:flex-row mb-8 w-full'>
+  <section className='flex-col md:flex-row my-8 w-full'>
     <div className='w-full flex justify-between items-center md:flex-row flex-col pt-6 border-t-[1px] border-t-gray-300'>
       <div>
         <p className='text-center'>

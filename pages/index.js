@@ -1,6 +1,6 @@
 import Head from 'next/head'
 
-import { Navbar, About, Footer } from '@/components'
+import { Navbar, About, Contact, Footer } from '@/components'
 
 export default function Home() {
   return (
@@ -17,6 +17,7 @@ export default function Home() {
 
         <section className='flex flex-col px-10 md:px-20 lg:px-40 h-screen justify-between'>
           <About/>
+          <Contact/>
 
           <Footer/>
         </section>

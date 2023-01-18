@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 import { AiOutlineMenu, AiOutlineClose} from 'react-icons/ai'
 import { navLinks } from '@/constants'
 import { Button } from '.'
+import Image from 'next/image'
+import logo from '../public/logo-low-res.png'
 
 const Navbar = () => {
   {/* Mobile drop-down menu status */}
@@ -11,7 +13,7 @@ const Navbar = () => {
     <nav className='w-full items-center py-6 px-4 mb-12 flex justify-between'>
       {/* Logo */}
       <a href='#' className='cursor-pointer flex flex-row'>
-        <img src='' alt='ZC' className='h-[32px] mx-10'/>
+        <Image src={logo} alt='ZC' className='w-[100px] mr-10'/>
       </a>
 
       {/* Desktop menu */}

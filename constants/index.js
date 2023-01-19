@@ -52,12 +52,12 @@ export const socialMedia = [
 export const services = [
     {
         name: 'Desktop Applications',
-        desc: 'I will develop professional and multi-platform custom PC applications to increase productivity and help automate your business.',
+        desc: 'I develop professional and multi-platform custom PC applications to help automate and increase productivity for your business.',
         icon: <AiOutlineDesktop/>,
     },
     {
         name: 'Backend Development',
-        desc: 'I offer development services to help you create new backend systems from the ground up, or add onto and enhance your existing infrastructure.',
+        desc: 'I offer backend development services to help you create new systems from the ground up, or add onto and enhance your existing infrastructure.',
         icon: <AiOutlineDatabase/>,
     },
     {

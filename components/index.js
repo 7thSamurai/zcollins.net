@@ -5,6 +5,7 @@ import Skills from "./Skills";
 import Contact from "./Contact";
 import Footer from "./Footer";
 import Button from "./Button";
+import HexIcon from "./HexIcon";
 
 export {
     Navbar,
@@ -14,4 +15,5 @@ export {
     Contact,
     Footer,
     Button,
+    HexIcon,
 };

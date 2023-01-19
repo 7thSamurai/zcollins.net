@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from '@/style'
-import { BsHexagonFill } from 'react-icons/bs'
 import { services } from '@/constants'
+import { HexIcon } from '.'
 
 function Services() {
   return (
@@ -18,15 +18,7 @@ function Services() {
             </div>
 
             {/* Service icon */}
-            <div className='grid grid-cols-1 grid-rows-1 items-center'>
-              {/* Hexagon background */}
-              <BsHexagonFill className='text-8xl row-start-1 col-start-1 text-teal-500'/>
-
-              {/* Actually icon */}
-              <div className='flex row-start-1 col-start-1 justify-center'>
-                <h2 className='text-6xl text-white'>{service.icon}</h2>
-              </div>
-            </div>
+            <HexIcon icon={service.icon}/>
 
             {/* Service description*/}
             <p className='text-eerie-black text-xl py-4'>{service.desc}</p>

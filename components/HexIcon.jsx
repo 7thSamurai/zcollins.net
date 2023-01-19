@@ -3,7 +3,7 @@ import { BsHexagonFill } from 'react-icons/bs'
 
 /* Hexagon Icon */
 const HexIcon = (props) => (
-  <div className='grid grid-cols-1 grid-rows-1 items-center'>
+  <div className={`grid grid-cols-1 grid-rows-1 items-center ${props.styles}`}>
     {/* Hexagon background */}
     <BsHexagonFill className='text-8xl row-start-1 col-start-1 text-keppel'/>
 

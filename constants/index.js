@@ -4,8 +4,8 @@ import {
     AiFillLinkedin,
     AiOutlineMail,
     AiOutlineDesktop,
-    AiOutlineCloudServer,
     AiOutlineDatabase,
+    AiOutlineCode,
 } from 'react-icons/ai'
 
 import {
@@ -26,6 +26,7 @@ import { SlPhone, SlSocialTwitter, } from 'react-icons/sl'
 import { IoAnalyticsOutline } from 'react-icons/io5'
 import { FiDatabase } from 'react-icons/fi'
 import { GrMysql} from 'react-icons/gr'
+import { HiOutlineChip, HiOutlineCode } from 'react-icons/hi'
 
 export const navLinks = [
     {
@@ -90,6 +91,7 @@ export const services = [
 export const skills = [
     {
         name: 'Languages',
+        icon: <HiOutlineCode/>,
         skills: [
             {
                 name: 'C',
@@ -111,6 +113,7 @@ export const skills = [
     },
     {
         name: 'Technologies',
+        icon: <HiOutlineChip/>,
         skills: [
             {
                 name: 'Qt',
@@ -132,6 +135,7 @@ export const skills = [
     },
     {
         name: 'Tools',
+        icon: <AiOutlineCode/>,
         skills: [
             {
                 name: 'Git',

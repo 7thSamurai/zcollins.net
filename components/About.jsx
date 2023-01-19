@@ -5,7 +5,7 @@ import { socialMedia } from '@/constants'
 import { HiArrowLongRight } from 'react-icons/hi2'
 
 const About = () => (
-  <section className='mx-4 bg-middle-gray'>
+  <section className='mx-4 bg-ghost-white'>
     <div className='text-center p-10'>
       <h1 className='text-5xl py-2 font-bold md:text-6xl font-redhat'>Zach Collins</h1>
       <h2 className='text-2xl py-2 md:text-3xl'>Software Developer</h2>

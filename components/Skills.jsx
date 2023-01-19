@@ -1,30 +1,30 @@
 import React from 'react'
-import styles from '@/style'
+import styles  from '@/style'
 import { skills } from '@/constants'
-import { HexIcon } from '.'
-
-import { AiOutlineCode } from 'react-icons/ai'
 
 function Skills() {
   return (
     <section className={`${styles.paddingX} bg-ghost-white`}>
       <h2 className='text-center font-bold text-4xl'>Skills</h2>
 
-      <div className='grid grid-cols-1 xl:grid-cols-3 gap-4 mt-10 mb-10'>
+      <div className='flex flex-row xl:flex-row justify-between 2xl:mx-52 mt-10 mb-10'>
         {/* Categories */}
         {skills.map((category) => (
           <div className='flex flex-col items-center'>
-            <h3 className='text-3xl font-bold text-center'>{category.name}</h3>
-            <HexIcon icon={category.icon}/>
+            <h3 className='flex flex-row items-center text-lg md:text-2xl lg:text-3xl font-bold text-center mb-1 lg:mb-4'>
+               {category.name} 
+               {/* Make icon not visible on mobile*/}
+               <div className='hidden md:flex ml-2'>{category.icon}</div>
+            </h3>
+
             {/* Skills */}
             <div className='flex flex-row justify-center items-center'>
               <ul className='list-none'>
                 {category.skills.map((skill) => (
-                  <li className='flex flex-row items-center text-2xl text-eerie-black'>
+                  <li className='flex flex-row items-center text-xl md:text-2xl lg:text-3xl text-eerie-black'>
                     <div className='text-keppel'>{skill.icon}</div> &nbsp; {skill.name}
                   </li>
                 ))}
-
               </ul>
             </div>
           </div> 

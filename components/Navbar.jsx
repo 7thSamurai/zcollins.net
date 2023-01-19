@@ -26,7 +26,7 @@ const Navbar = () => {
           ))}
         </ul>
 
-        <Button style='justify-end' title='Hire'/>
+        <a href="#contact"><Button style='justify-end' title='Contact'/></a>
       </div>
 
       {/* Mobile menu*/}
@@ -48,7 +48,7 @@ const Navbar = () => {
             ))}
 
             <li>
-            <Button title='Hire'/>
+              <a href="#contact"><Button style='justify-end' title='Contact'/></a>
             </li>
           </ul>
         </div>

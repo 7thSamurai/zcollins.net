@@ -3,12 +3,14 @@ import {
     AiFillTwitterCircle, 
     AiFillLinkedin,
     AiOutlineMail,
+    AiOutlineDesktop,
+    AiOutlineCloudServer,
+    AiOutlineDatabase,
 } from 'react-icons/ai'
 
-import {
-    SlPhone, 
-    SlSocialTwitter,
-} from 'react-icons/sl'
+import { SlPhone, SlSocialTwitter, } from 'react-icons/sl'
+import { IoAnalyticsOutline } from 'react-icons/io5'
+import { FiDatabase } from 'react-icons/fi'
 
 export const navLinks = [
     {
@@ -46,6 +48,29 @@ export const socialMedia = [
         link: 'https://linkedin.com/in/zcol',
     },
 ];
+
+export const services = [
+    {
+        name: 'Desktop Applications',
+        desc: 'I will develop professional and multi-platform custom PC applications to increase productivity and help automate your business.',
+        icon: <AiOutlineDesktop/>,
+    },
+    {
+        name: 'Backend Development',
+        desc: 'I offer development services to help you create new backend systems from the ground up, or add onto and enhance your existing infrastructure.',
+        icon: <AiOutlineDatabase/>,
+    },
+    {
+        name: 'Database Design',
+        desc: 'I will design and implement databases for your business, whether you\'re starting from scratch or migrating an existing database or spreadsheet.',
+        icon: <FiDatabase/>,
+    },
+    {
+        name: 'Data Analysis',
+        desc: 'I provide data analysis services to help you make informed decisions through the collection, cleaning, and study of large datasets.',
+        icon: <IoAnalyticsOutline/>,
+    },
+]
 
 export const contactInfo = [
     {

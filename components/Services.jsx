@@ -5,7 +5,7 @@ import { services } from '@/constants'
 
 function Services() {
   return (
-    <section className={`${styles.paddingX} mb-10 py-6`}>
+    <section className={`${styles.paddingX} mb-10 py-6 bg-ghost-white`}>
       <h2 className='text-center font-bold text-4xl'>Services</h2>
 
       {/* Services list */}
@@ -29,7 +29,7 @@ function Services() {
             </div>
 
             {/* Service description*/}
-            <p className='text-gray-800 text-xl py-4'>{service.desc}</p>
+            <p className='text-eerie-black text-xl py-4'>{service.desc}</p>
           </div>
         ))}
       </div>

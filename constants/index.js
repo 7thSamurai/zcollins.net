@@ -8,9 +8,24 @@ import {
     AiOutlineDatabase,
 } from 'react-icons/ai'
 
+import {
+    SiC,
+    SiCplusplus,
+    SiPython,
+    SiQt,
+    SiFlask,
+    SiPandas,
+    SiAmazonaws,
+    SiGit,
+    SiGithub,
+    SiLinux,
+    SiCmake,
+} from 'react-icons/si'
+
 import { SlPhone, SlSocialTwitter, } from 'react-icons/sl'
 import { IoAnalyticsOutline } from 'react-icons/io5'
 import { FiDatabase } from 'react-icons/fi'
+import { GrMysql} from 'react-icons/gr'
 
 export const navLinks = [
     {
@@ -69,6 +84,72 @@ export const services = [
         name: 'Data Analysis',
         desc: 'I provide data analysis services to help you make informed decisions through the collection, cleaning, and study of large datasets.',
         icon: <IoAnalyticsOutline/>,
+    },
+]
+
+export const skills = [
+    {
+        name: 'Languages',
+        skills: [
+            {
+                name: 'C',
+                icon: <SiC/>,
+            },
+            {
+                name: 'C++',
+                icon: <SiCplusplus/>,
+            },
+            {
+                name: 'Python',
+                icon: <SiPython/>,
+            },
+            {
+                name: 'MySQL',
+                icon: <GrMysql/>,
+            },
+        ],
+    },
+    {
+        name: 'Technologies',
+        skills: [
+            {
+                name: 'Qt',
+                icon: <SiQt/>,
+            },
+            {
+                name: 'Flask',
+                icon: <SiFlask/>,
+            },
+            {
+                name: 'Pandas',
+                icon: <SiPandas/>,
+            },
+            {
+                name: 'AWS',
+                icon: <SiAmazonaws/>,
+            },
+        ],
+    },
+    {
+        name: 'Tools',
+        skills: [
+            {
+                name: 'Git',
+                icon: <SiGit/>,
+            },
+            {
+                name: 'GitHub',
+                icon: <SiGithub/>,
+            },
+            {
+                name: 'Linux',
+                icon: <SiLinux/>,
+            },
+            {
+                name: 'CMake',
+                icon: <SiCmake/>,
+            },
+        ],
     },
 ]
 

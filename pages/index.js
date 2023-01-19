@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import styles from '@/style'
 
-import { Navbar, About, Services, Contact, Footer } from '@/components'
+import { Navbar, About, Services, Skills, Contact, Footer } from '@/components'
 
 export default function Home() {
   return (
@@ -15,11 +15,12 @@ export default function Home() {
         <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png"/>
       </Head>
 
-      <main className='bg-white flex flex-col h-screen justify-between'>
+      <main className='flex flex-col h-screen justify-between'>
         <Navbar/>
 
         <About/>
         <Services/>
+        <Skills/>
         <Contact/>
 
         <Footer/>

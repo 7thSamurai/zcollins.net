@@ -13,14 +13,14 @@ const Navbar = () => {
     <nav className='w-full items-center py-3 px-4 flex justify-between'>
       {/* Logo */}
       <a href='#' className='cursor-pointer ml-[-19px]'>
-        <Image src={logo} alt='ZC' className='w-[100px] mr-10'/>
+        <Image src={logo} alt='ZC' className='w-[100px] mr-10 mix-blend-multiply'/>
       </a>
 
       {/* Desktop menu */}
       <div className='sm:flex hidden flex-1'>
         <ul className='list-none items-center flex flex-1 justify-start'>
           {navLinks.map((nav, index) => (
-            <li key={nav.id} className={'text-gray-600 hover:text-black cursor-pointer text-[18px] mr-10'} title={nav.title}>
+            <li key={nav.id} className={'text-eerie-black hover:text-black cursor-pointer text-[18px] mr-10'} title={nav.title}>
               <a href={`#${nav.id}`}>{nav.title}</a>
             </li>
           ))}

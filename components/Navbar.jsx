@@ -13,7 +13,7 @@ const Navbar = () => {
     <nav className='w-full items-center py-3 px-4 flex justify-between'>
       {/* Logo */}
       <a href='#' className='cursor-pointer ml-[-19px]'>
-        <Image src={logo} alt='ZC' className='w-[100px] mr-10 mix-blend-multiply'/>
+        <Image src={logo} alt='ZC' className='w-[100px] mr-10'/>
       </a>
 
       {/* Desktop menu */}

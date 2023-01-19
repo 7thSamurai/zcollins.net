@@ -1,9 +1,10 @@
 import React from 'react'
+import styles from '@/style'
 import { services } from '@/constants'
 
 function Services() {
   return (
-    <div className='grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-4 gap-4 mb-20'>
+    <div className={`${styles.paddingX} grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-4 gap-4 mb-20`}>
       {services.map((service) => (
         <div className='flex flex-col text-center items-center'>
           <div className='h-[120px]'>

@@ -10,9 +10,9 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
 
   return (
-    <nav className='w-full items-center py-6 px-4 mb-12 flex justify-between'>
+    <nav className='w-full items-center py-3 px-4 flex justify-between'>
       {/* Logo */}
-      <a href='#' className='cursor-pointer flex flex-row'>
+      <a href='#' className='cursor-pointer ml-[-19px]'>
         <Image src={logo} alt='ZC' className='w-[100px] mr-10'/>
       </a>
 

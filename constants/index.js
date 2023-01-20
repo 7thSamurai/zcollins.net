@@ -166,8 +166,8 @@ export const contactInfo = [
     },
     {
         name: 'Phone',
-        text: '(+1) 222-333-4444',
-        info: 'tel:+1-222-333-444',
+        text: '+1 (440) 409-7867',
+        info: 'tel:+1-440-409-7867',
         icon: <SlPhone/>,
     },
     {

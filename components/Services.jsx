@@ -5,11 +5,11 @@ import { HexIcon } from '.'
 
 function Services() {
   return (
-    <section className={`${styles.paddingX} mb-10 py-6 bg-ghost-white`}>
+    <section className={`${styles.paddingX} mb-10 pt-10 pb-6 bg-ghost-white`}>
       <h2 className='text-center font-bold text-4xl'>Services</h2>
 
       {/* Services list */}
-      <div className='grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-4 gap-4 mt-10'>
+      <div className='grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-4 gap-4 mt-10'>
         {services.map((service) => (
           <div className='flex flex-col text-center items-center'>
             {/* Service title */}

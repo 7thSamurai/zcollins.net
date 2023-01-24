@@ -10,7 +10,7 @@ function Skills() {
       <div className='flex flex-row xl:flex-row justify-between 2xl:mx-52 mt-10 mb-10'>
         {/* Categories */}
         {skills.map((category) => (
-          <div className='flex flex-col items-center'>
+          <div key={category.name} className='flex flex-col items-center'>
             <h3 className='flex flex-row items-center text-lg md:text-2xl lg:text-3xl font-bold text-center mb-1 lg:mb-4'>
                {category.name} 
                {/* Make icon not visible on mobile*/}
@@ -21,7 +21,7 @@ function Skills() {
             <div className='flex flex-row justify-center items-center'>
               <ul className='list-none'>
                 {category.skills.map((skill) => (
-                  <li className='flex flex-row items-center text-xl md:text-2xl lg:text-3xl text-eerie-black'>
+                  <li key={skill.name} className='flex flex-row items-center text-xl md:text-2xl lg:text-3xl text-eerie-black'>
                     <div className='text-keppel'>{skill.icon}</div> &nbsp; {skill.name}
                   </li>
                 ))}

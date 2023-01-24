@@ -11,7 +11,7 @@ function Services() {
       {/* Services list */}
       <div className='grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-4 gap-4 mt-10'>
         {services.map((service) => (
-          <div className='flex flex-col text-center items-center'>
+          <div key={service.name} className='flex flex-col text-center items-center'>
             {/* Service title */}
             <div className=''>
               <h3 className='text-2xl font-bold mb-6'>{service.name}</h3>

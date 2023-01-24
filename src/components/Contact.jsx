@@ -19,7 +19,7 @@ function Contact() {
           {/* Contact type */}
           <div>
             {contactInfo.map((contact) => (
-              <h3 className='flex flex-row text-xl md:text-2xl items-center'>
+              <h3 key={contact.name} className='flex flex-row text-xl md:text-2xl items-center'>
                 {contact.icon} &nbsp; {contact.name}:
               </h3>
             ))}
@@ -28,7 +28,7 @@ function Contact() {
           {/* Contact info */}
           <div className='ml-4'>
             {contactInfo.map((contact) => (
-              <h3 className='text-xl md:text-2xl text-eerie-black'><a className='text-keppel hover:underline hover:text-teal-600' href={contact.info} title={contact.name}>{contact.text}</a></h3>
+              <h3 key={contact.name} className='text-xl md:text-2xl text-eerie-black'><a className='text-keppel hover:underline hover:text-teal-600' href={contact.info} title={contact.name}>{contact.text}</a></h3>
             ))}
           </div>
         </div>

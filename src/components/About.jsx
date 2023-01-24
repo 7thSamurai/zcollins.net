@@ -25,7 +25,7 @@ const About = () => (
       </p>
 
       <Button title={
-        <a href='#contact' className='flex flex-row items-center'>
+        <a href='/#contact' className='flex flex-row items-center'>
           Hire Me
           <HiArrowLongRight className='ml-2'/>
         </a>

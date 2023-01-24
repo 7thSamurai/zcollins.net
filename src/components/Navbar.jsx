@@ -21,12 +21,12 @@ const Navbar = () => {
         <ul className='list-none items-center flex flex-1 justify-start'>
           {navLinks.map((nav, index) => (
             <li key={nav.id} className={'text-eerie-black hover:text-black cursor-pointer text-[18px] mr-10'} title={nav.title}>
-              <a href={`#${nav.id}`}>{nav.title}</a>
+              <a href={`/#${nav.id}`}>{nav.title}</a>
             </li>
           ))}
         </ul>
 
-        <a href="#contact"><Button style='justify-end' title='Contact'/></a>
+        <a href="/#contact"><Button style='justify-end' title='Contact'/></a>
       </div>
 
       {/* Mobile menu*/}
@@ -48,7 +48,7 @@ const Navbar = () => {
             ))}
 
             <li>
-              <a href="#contact"><Button style='justify-end' title='Contact'/></a>
+              <a href="/#contact"><Button style='justify-end' title='Contact'/></a>
             </li>
           </ul>
         </div>

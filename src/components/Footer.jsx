@@ -3,7 +3,7 @@ import styles from '../styles'
 import { socialMedia } from '../constants'
 
 const Footer = () => (
-  <section className={`${styles.paddingX} flex-col md:flex-row my-8 w-full text-eerie-black bg-ghost-white`}>
+  <section className={`${styles.paddingX} flex-col md:flex-row mt-8 w-full text-eerie-black bg-ghost-white`}>
     <div className='w-full flex justify-between items-center md:flex-row flex-col pt-6 border-t-[1px] border-t-gray-300'>
       {/* Copyright notice */}
       <div>

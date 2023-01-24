@@ -1,6 +1,6 @@
 import React from 'react'
-import styles  from '@/style'
-import { skills } from '@/constants'
+import styles  from '../style'
+import { skills } from '../constants'
 
 function Skills() {
   return (

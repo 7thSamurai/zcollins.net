@@ -1,6 +1,6 @@
 import React from 'react'
-import styles from '@/style'
-import { socialMedia } from '@/constants'
+import styles from '../style'
+import { socialMedia } from '../constants'
 
 const Footer = () => (
   <section className={`${styles.paddingX} flex-col md:flex-row my-8 w-full text-eerie-black bg-ghost-white`}>

@@ -1,6 +1,6 @@
 import React from 'react'
-import styles from '@/style'
-import { contactInfo } from '@/constants'
+import styles from '../style'
+import { contactInfo } from '../constants'
 
 function Contact() {
   return (

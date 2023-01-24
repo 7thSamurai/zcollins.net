@@ -1,7 +1,7 @@
 import Head from 'next/head'
-import styles from '@/style'
+import styles from '../style'
 
-import { Navbar, About, Services, Skills, Contact, Footer } from '@/components'
+import { Navbar, About, Services, Skills, Contact, Footer } from '../components'
 
 export default function Home() {
   return (

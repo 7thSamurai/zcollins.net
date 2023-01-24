@@ -1,6 +1,6 @@
 import React from 'react'
-import styles from '@/style'
-import { services } from '@/constants'
+import styles from '../style'
+import { services } from '../constants'
 import { HexIcon } from '.'
 
 function Services() {

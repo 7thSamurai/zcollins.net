@@ -1,8 +1,8 @@
 import React from 'react'
-import styles from '@/style'
+import styles from '../style'
 import Image from 'next/image'
 import { Button } from '.'
-import { socialMedia } from '@/constants'
+import { socialMedia } from '../constants'
 import { HiArrowLongRight } from 'react-icons/hi2'
 
 const About = () => (

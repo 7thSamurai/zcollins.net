@@ -1,10 +1,10 @@
 import React from 'react'
-import styles from '../style'
+import styles from '../styles'
 import { services } from '../constants'
 import { HexIcon } from '.'
 
-function Services() {
-  return (
+const Services = () => (
+
     <section className={`${styles.paddingX} mb-10 pt-10 pb-6 bg-ghost-white`}>
       <h2 className='text-center font-bold text-4xl'>Services</h2>
 
@@ -27,6 +27,5 @@ function Services() {
       </div>
     </section>
   )
-}
 
 export default Services

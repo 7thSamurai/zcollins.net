@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import styles from '../style'
+import styles from '../styles'
 
 import { Navbar, About, Services, Skills, Contact, Footer } from '../components'
 
@@ -15,14 +15,13 @@ export default function Home() {
         <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png"/>
       </Head>
 
+      <Navbar/>
+      
       <main className='flex flex-col h-screen justify-between'>
-        <Navbar/>
-
         <About/>
         <Services/>
         <Skills/>
         <Contact/>
-
         <Footer/>
       </main>
     </>

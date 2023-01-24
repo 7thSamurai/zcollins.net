@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from '../style'
+import styles from '../styles'
 import Image from 'next/image'
 import { Button } from '.'
 import { socialMedia } from '../constants'

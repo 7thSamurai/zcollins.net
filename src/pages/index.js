@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Zach Collins - Freelance Developer For Hire</title>
+        <title>Zach Collins - Freelance Software Developer</title>
       </Head>
       
       <main>

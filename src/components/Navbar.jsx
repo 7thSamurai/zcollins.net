@@ -12,7 +12,7 @@ const Navbar = () => {
   return (
     <nav className='w-full items-center py-3 px-4 flex justify-between'>
       {/* Logo */}
-      <a href='#' className='cursor-pointer ml-[-19px]'>
+      <a href='/' className='cursor-pointer ml-[-19px]'>
         <Image src={logo} alt='ZC' className='w-[100px] mr-10'/>
       </a>
 

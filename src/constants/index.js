@@ -70,21 +70,25 @@ export const services = [
         name: 'Desktop Applications',
         desc: 'I develop professional and multi-platform custom PC applications to help automate and increase productivity for your business.',
         icon: <AiOutlineDesktop/>,
+        link: '#',
     },
     {
         name: 'Backend Development',
         desc: 'I offer backend development services to help you create new systems from the ground up, or add onto and enhance your existing infrastructure.',
         icon: <AiOutlineDatabase/>,
+        link: '#',
     },
     {
         name: 'Database Design',
         desc: 'I will design and implement databases for your business, whether you\'re starting from scratch or migrating an existing database or spreadsheet.',
         icon: <FiDatabase/>,
+        link: '#',
     },
     {
         name: 'Data Analysis',
         desc: 'I provide data analysis services to help you make informed decisions through the collection, cleaning, and study of large datasets.',
         icon: <IoAnalyticsOutline/>,
+        link: '#',
     },
 ]
 

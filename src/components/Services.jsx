@@ -2,7 +2,7 @@ import React from 'react'
 import styles from '../styles'
 import { services } from '../constants'
 import { HexIcon } from '.'
-import { HiArrowLongRight } from 'react-icons/hi2'
+import { BsArrowRight } from 'react-icons/bs'
 
 const Services = () => (
 
@@ -25,9 +25,9 @@ const Services = () => (
               <p className='text-eerie-black text-xl py-4'>{service.desc}</p>
 
               {/* Details */}
-              <a href={service.link} className='flex flex-row items-center pt-4'>
+              <a href={service.link} className='inline-flex items-center pt-4 hover:underline'>
                 View Details
-                <HiArrowLongRight className='ml-2'/>
+                <BsArrowRight className='ml-2'/>
               </a>
             </div>
           </div>

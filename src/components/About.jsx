@@ -3,7 +3,7 @@ import styles from '../styles'
 import Image from 'next/image'
 import { Button } from '.'
 import { socialMedia } from '../constants'
-import { HiArrowLongRight } from 'react-icons/hi2'
+import { BsArrowRight } from 'react-icons/bs'
 
 const About = () => (
   <section className={`${styles.paddingX} mx-4 bg-ghost-white`}>
@@ -25,9 +25,9 @@ const About = () => (
       </p>
 
       <Button title={
-        <a href='/#contact' className='flex flex-row items-center'>
+        <a href='/#contact' className='inline-flex items-center'>
           Hire Me
-          <HiArrowLongRight className='ml-2'/>
+          <BsArrowRight className='ml-2'/>
         </a>
       }/>
     </div>

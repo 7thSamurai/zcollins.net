@@ -30,20 +30,20 @@ import { HiOutlineChip, HiOutlineCode } from 'react-icons/hi'
 
 export const navLinks = [
     {
-        id: 'about',
-        title: 'About',
+        name: 'About',
+        link: '/#about',
     },
     {
-        id: 'blog',
-        title: 'Blog',
+        name: 'Blog',
+        link: '/blog',
     },
     {
-        id: 'resume',
-        title: 'Resume',
+        name: 'Resume',
+        link: '/resume',
     },
     {
-        id: 'projects',
-        title: 'Projects',
+        name: 'Projects',
+        link: '/projects',
     },
 ];
 

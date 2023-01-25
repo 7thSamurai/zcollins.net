@@ -20,8 +20,8 @@ const Navbar = () => {
       <div className='sm:flex hidden flex-1'>
         <ul className='list-none items-center flex flex-1 justify-start'>
           {navLinks.map((nav, index) => (
-            <li key={nav.id} className={'text-eerie-black hover:text-black cursor-pointer text-[18px] mr-10'} title={nav.title}>
-              <a href={`/#${nav.id}`}>{nav.title}</a>
+            <li key={nav.name} className={'text-eerie-black hover:text-black cursor-pointer text-[18px] mr-10'} title={nav.name}>
+              <a href={nav.link}>{nav.name}</a>
             </li>
           ))}
         </ul>
@@ -42,8 +42,8 @@ const Navbar = () => {
         <div className={`${toggle ? 'flex' : 'hidden'} p-6 bg-gradient-to-br from-gray-900 to-gray-800 absolute top-20 right-0 mx-4 my-2 min-w-[140px] rounded-xl sidebar`}>
           <ul className='list-none flex flex-col justify-end items-center flex-1 text-white'>
             {navLinks.map((nav, index) => (
-              <li key={nav.id} className={'cursor-pointer text-[16px] mb-4'} title={nav.title}>
-                <a href={`#${nav.id}`}>{nav.title}</a>
+              <li key={nav.name} className={'cursor-pointer text-[16px] mb-4'} title={nav.name}>
+                <a href={nav.link}>{nav.name}</a>
               </li>
             ))}
 

@@ -79,7 +79,7 @@ export async function getBlogPostFromSlug(slug) { return getArticleFromSlug(slug
 export async function getProjectFromSlug (slug) { return getArticleFromSlug(slug, projectsPath); }
 
 export async function getAllBlogPosts() { return getAllArticles(blogPath); }
-export async function getAllProjects () { return getAllProjects(projectsPath); }
+export async function getAllProjects () { return getAllArticles(projectsPath); }
 
 export async function getLatestBlogPosts() { return getAllBlogPosts().slice(0, 3); }
 export async function getLatestProjects () { return getAllProjects().slice(0, 3); }

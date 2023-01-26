@@ -31,12 +31,12 @@ h1, h2, h3 {
 
 @font-face {
   font-family: 'inter';
-  src: url('../../public/Inter.ttf');
+  src: url('../assets/Inter.ttf');
 }
 
 @font-face {
   font-family: 'redhat';
-  src: url('../../public/RedHatDisplay.ttf');
+  src: url('../assets/RedHatDisplay.ttf');
 }
 
 .sidebar {

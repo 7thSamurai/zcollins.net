@@ -3,7 +3,7 @@ import { AiOutlineMenu, AiOutlineClose} from 'react-icons/ai'
 import { navLinks } from '../constants'
 import { Button } from '.'
 import Image from 'next/image'
-import logo from '@/public/logo-low-res.png'
+import logo from '../assets/logo-low-res.png'
 
 const Navbar = () => {
   {/* Mobile drop-down menu status */}

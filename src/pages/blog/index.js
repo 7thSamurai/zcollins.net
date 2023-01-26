@@ -4,7 +4,6 @@ import { getAllBlogPosts } from "@/src/utils/mdx"
 
 export async function getStaticProps() {
     const articles = await getAllBlogPosts();
-    console.log(articles);
 
     return {
         props: {

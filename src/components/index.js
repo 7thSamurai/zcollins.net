@@ -7,6 +7,10 @@ import Footer from "./Footer";
 import Button from "./Button";
 import HexIcon from "./HexIcon";
 
+const mdxComponents = {
+
+};
+
 export {
     Navbar,
     About,
@@ -16,4 +20,5 @@ export {
     Footer,
     Button,
     HexIcon,
+    mdxComponents,
 };

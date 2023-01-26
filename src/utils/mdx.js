@@ -1,11 +1,25 @@
 import path from 'path';
 import fs from 'fs';
 import { sync } from 'glob';
+import { serialize } from 'next-mdx-remote/serialize'
 import matter from 'gray-matter';
 import readingTime from 'reading-time'
 
 const blogPath = path.join(process.cwd(), 'data/blog')
 const projectsPath = path.join(process.cwd(), 'data/projects')
+
+/* Converts raw markdown content */
+export async function serializeMdx(content) {
+    return serialize(
+        content, 
+        {
+            mdxOptions: {
+                remarkPlugins: [],
+                rehypePlugins: [],
+            },
+        },
+    );
+}
 
 /* Gets a list of all the slugs in an article directory */
 async function getSlugs(articlesPath) {
@@ -73,7 +87,7 @@ async function getAllArticles(articlesPath) {
 }
 
 export async function getBlogPostSlugs() { return getSlugs(blogPath); }
-export async function getProjectsSlug () { return getSlugs(projectsPath); }
+export async function getProjectSlugs () { return getSlugs(projectsPath); }
 
 export async function getBlogPostFromSlug(slug) { return getArticleFromSlug(slug, blogPath); }
 export async function getProjectFromSlug (slug) { return getArticleFromSlug(slug, projectsPath); }

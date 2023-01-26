@@ -4,7 +4,6 @@ import { getAllProjects } from "@/src/utils/mdx"
 
 export async function getStaticProps() {
     const articles = await getAllProjects();
-    console.log(articles);
 
     return {
         props: {

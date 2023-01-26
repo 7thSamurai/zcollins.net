@@ -14,7 +14,9 @@ const Services = () => (
           <div key={service.name} className='flex flex-row justify-between items-center'>
 
             {/* Service icon */}
-            <HexIcon icon={service.icon}/>
+            <a href={service.link}>
+              <HexIcon icon={service.icon}/>
+            </a>
 
             {/* Service title */}
             <div className='flex flex-col pl-4 md:pl-10'>

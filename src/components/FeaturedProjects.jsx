@@ -2,7 +2,6 @@ import React from 'react'
 import Link from 'next/link'
 import styles from '../styles'
 import { BsArrowRight } from 'react-icons/bs'
-import Image from 'next/image'
 
 function FeaturedProjects(props) {
   return (
@@ -14,14 +13,16 @@ function FeaturedProjects(props) {
         Learn how custom software solutions helped to solve my clients' problems and improve their operations.
       </p>
 
-        <div className='grid grid-cols-1 md:grid-cols-3 py-10 gap-8'>
+        <div className='grid grid-cols-1 lg:grid-cols-3 py-10 gap-8'>
           {props.projects.map((project) => (
-            <article key={project.meta.title} className='border border-gray-200 rounded-lg shadow-md hover:bg-gray-100 p-4'>
+            <article key={project.meta.title} className='flex flex-col justify-between border border-gray-200 rounded-lg shadow-md hover:bg-gray-100 p-4'>
               {/* Project thumbnail image */}
-              <Image className='rounded-lg'/>
+              <Link href={`/projects/${project.meta.slug}`} passHref>
+                <img src={`/images/${project.meta.image}`} className='w-full rounded-lg'/>
+              </Link>
 
               {/* Project type */}
-              <p className='text-keppel text-lg mb-4'>
+              <p className='text-keppel text-lg my-4'>
                 {project.meta.type}
               </p>
 

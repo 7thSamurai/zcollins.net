@@ -33,15 +33,17 @@ function FeaturedProjects(props) {
                 {project.meta.about}
               </p>
 
-              <div className='flex flex-row justify-between mt-8'>
+              <div className='flex flex-wrap justify-between mt-8'>
                 {/* Reading time */}
-                <p className='text-lg text-eerie-black'>{project.meta.readingTime}</p>
+                <p className='text-lg text-roman-silver mr-8'>
+                  {project.meta.readingTime} &middot; {new Date(project.meta.publishedAt).toLocaleDateString('en-us', { year:"numeric", month:"short"})}
+                </p>
 
                 {/* Link to project page */}
                 <Link href={`/projects/${project.meta.slug}`} passHref className='inline-flex items-center text-lg text-keppel hover:underline cursor-pointer'>
                   Read More
                   <BsArrowRight className='ml-2'/>
-                  </Link>
+                </Link>
               </div>
             </article>
           ))}

@@ -2,6 +2,7 @@ import Navbar from "./Navbar";
 import About from "./About";
 import Services from "./Services";
 import Skills from "./Skills";
+import RecentArticles from "./RecentArticles";
 import FeaturedProjects from "./FeaturedProjects";
 import Contact from "./Contact";
 import Footer from "./Footer";
@@ -17,6 +18,7 @@ export {
     About,
     Services,
     Skills,
+    RecentArticles,
     FeaturedProjects,
     Contact,
     Footer,

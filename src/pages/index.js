@@ -25,7 +25,7 @@ export default function Home(props) {
         <About/>
         <Services/>
         <Skills/>
-        <FeaturedProjects projects={props.projects}/>
+        <FeaturedProjects articles={props.projects}/>
         <Contact/>
       </main>
     </div>

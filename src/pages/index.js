@@ -1,14 +1,16 @@
 import Head from 'next/head'
 import styles from '../styles'
 
-import { About, Services, Skills, FeaturedProjects, Contact } from '../components'
-import { getAllProjects } from "@/src/utils/mdx";
+import { About, Services, Skills, FeaturedProjects, LatestBlogPosts, Contact } from '../components'
+import { getAllBlogPosts, getAllProjects } from "@/src/utils/mdx";
 
 export async function getStaticProps() {
+  const posts = await getAllBlogPosts();
   const projects = await getAllProjects();
 
   return {
       props: {
+          posts,
           projects,
       },
   };
@@ -26,6 +28,7 @@ export default function Home(props) {
         <Services/>
         <Skills/>
         <FeaturedProjects articles={props.projects}/>
+        <LatestBlogPosts articles={props.posts}/>
         <Contact/>
       </main>
     </div>

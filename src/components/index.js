@@ -4,6 +4,7 @@ import Services from "./Services";
 import Skills from "./Skills";
 import RecentArticles from "./RecentArticles";
 import FeaturedProjects from "./FeaturedProjects";
+import LatestBlogPosts from "./LatestBlogPosts";
 import Contact from "./Contact";
 import Footer from "./Footer";
 import Button from "./Button";
@@ -20,6 +21,7 @@ export {
     Skills,
     RecentArticles,
     FeaturedProjects,
+    LatestBlogPosts,
     Contact,
     Footer,
     Button,

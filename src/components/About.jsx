@@ -1,15 +1,15 @@
 import React from 'react'
 import styles from '../styles'
 import Image from 'next/image'
-import { Button } from '.'
+import { Heading, Button } from '.'
 import { socialMedia } from '../constants'
 import { BsArrowRight } from 'react-icons/bs'
 
 const About = () => (
   <section className={`${styles.paddingX} mx-4 bg-ghost-white`}>
     <div className='text-center'>
-      <h1 className='text-5xl py-2 font-bold md:text-6xl font-redhat'>Zach Collins</h1>
-      <h2 className='text-2xl py-2 md:text-3xl'>Software Developer</h2>
+      <Heading.H1 className='py-2'>Zach Collins</Heading.H1>
+      <Heading.H3 className='py-2 font-normal'>Software Developer</Heading.H3>
 
       {/* About me summary */}
       <p className='text-md py-5 leading-8 text-eerie-black md:text-xl max-w-2xl mx-auto'>

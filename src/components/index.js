@@ -9,9 +9,12 @@ import Contact from "./Contact";
 import Footer from "./Footer";
 import Button from "./Button";
 import HexIcon from "./HexIcon";
+import Heading from "./Heading";
 
 const mdxComponents = {
-
+    h1: Heading.H1,
+    h2: Heading.H2,
+    h3: Heading.H3,
 };
 
 export {
@@ -26,5 +29,6 @@ export {
     Footer,
     Button,
     HexIcon,
+    Heading,
     mdxComponents,
 };

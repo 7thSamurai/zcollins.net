@@ -1,6 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 import { BsArrowRight } from 'react-icons/bs'
+import { Heading } from '.'
 
 function RecentArticles(props) {
   return (
@@ -18,7 +19,7 @@ function RecentArticles(props) {
               {article.meta.type}
             </p>
 
-            <h3 className='text-3xl font-bold'><Link href={`${props.path}/${article.meta.slug}`} passHref>{article.meta.title}</Link></h3>
+            <Heading.H3><Link href={`${props.path}/${article.meta.slug}`} passHref>{article.meta.title}</Link></Heading.H3 >
           </div>
 
           {/* Brief Article description */}

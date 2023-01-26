@@ -1,11 +1,12 @@
 import React from 'react'
 import styles  from '../styles'
 import { skills } from '../constants'
+import { Heading } from '.'
 
 function Skills() {
   return (
     <section className={`${styles.paddingX} bg-ghost-white`}>
-      <h2 className='text-center font-bold text-4xl'>Skills</h2>
+      <Heading.H2 className='text-center'>Skills</Heading.H2>
 
       <div className='flex flex-row xl:flex-row justify-between 2xl:mx-52 mt-10 mb-10'>
         {/* Categories */}

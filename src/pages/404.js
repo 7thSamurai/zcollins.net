@@ -1,5 +1,6 @@
 import Head from "next/head"
 import styles from "../styles"
+import { Button } from "../components"
 
 export default function Custom404() {
   return (
@@ -8,9 +9,15 @@ export default function Custom404() {
         <title>Zach Collins - 404</title>
       </Head>
 
-      <h1 className='font-bold text-4xl text-center py-20'>
-        404 - Page Not Found
-      </h1>
+      <div className='text-center'>
+        <h1 className='mb-4 text-7xl lg:text-9xl font-extrabold text-keppel'>404</h1>
+        <p className='mb-4 text-3xl md:text-4xl font-bold'>Something's missing.</p>
+        <p className='mb-4 text-lg font-light text-eerie-black'>Sorry, we can't find that page.</p>
+
+        <a href='/'>
+          <Button title='Back to Homepage'/>
+        </a>
+      </div>
     </div>
   )
 }

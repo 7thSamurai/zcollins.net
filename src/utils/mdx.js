@@ -5,8 +5,8 @@ import { serialize } from 'next-mdx-remote/serialize'
 import matter from 'gray-matter';
 import readingTime from 'reading-time'
 
-const blogPath = path.join(process.cwd(), 'data/blog')
-const projectsPath = path.join(process.cwd(), 'data/projects')
+const blogPath = path.join(process.cwd(), 'articles/blog')
+const projectsPath = path.join(process.cwd(), 'articles/projects')
 
 /* Converts raw markdown content */
 export async function serializeMdx(content) {

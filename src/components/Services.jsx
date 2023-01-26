@@ -5,7 +5,6 @@ import { HexIcon } from '.'
 import { BsArrowRight } from 'react-icons/bs'
 
 const Services = () => (
-
     <section className={`${styles.paddingX} mb-10 pt-10 pb-6 bg-ghost-white`}>
       <h2 className='text-center font-bold text-4xl'>Services</h2>
 

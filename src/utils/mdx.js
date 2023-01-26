@@ -95,5 +95,5 @@ export async function getProjectFromSlug (slug) { return getArticleFromSlug(slug
 export async function getAllBlogPosts() { return getAllArticles(blogPath); }
 export async function getAllProjects () { return getAllArticles(projectsPath); }
 
-export async function getLatestBlogPosts() { return getAllBlogPosts().slice(0, 3); }
-export async function getLatestProjects () { return getAllProjects().slice(0, 3); }
+export async function getLatestBlogPosts(limit = 3) { return getAllBlogPosts().slice(0, limit); }
+export async function getLatestProjects (limit = 3) { return getAllProjects().slice(0, limit); }

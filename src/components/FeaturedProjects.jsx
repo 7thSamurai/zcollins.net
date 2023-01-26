@@ -16,17 +16,19 @@ function FeaturedProjects(props) {
         <div className='grid grid-cols-1 lg:grid-cols-3 py-10 gap-8'>
           {props.projects.map((project) => (
             <article key={project.meta.title} className='flex flex-col justify-between border border-gray-200 rounded-lg shadow-md hover:bg-gray-100 p-4'>
-              {/* Project thumbnail image */}
-              <Link href={`/projects/${project.meta.slug}`} passHref>
-                <img src={`/images/${project.meta.image}`} className='w-full rounded-lg'/>
-              </Link>
+              <div>
+                {/* Project thumbnail image */}
+                <Link href={`/projects/${project.meta.slug}`} passHref>
+                  <img src={`/images/${project.meta.image}`} className='w-full rounded-lg'/>
+                </Link>
 
-              {/* Project type */}
-              <p className='text-keppel text-lg my-4'>
-                {project.meta.type}
-              </p>
+                {/* Project type */}
+                <p className='text-keppel text-lg my-4'>
+                  {project.meta.type}
+                </p>
 
-              <h3 className='text-3xl font-bold'><Link href={`/projects/${project.meta.slug}`} passHref>{project.meta.title}</Link></h3>
+                <h3 className='text-3xl font-bold'><Link href={`/projects/${project.meta.slug}`} passHref>{project.meta.title}</Link></h3>
+              </div>
 
               {/* Brief project description */}
               <p className='text-xl mt-4 text-eerie-black'>

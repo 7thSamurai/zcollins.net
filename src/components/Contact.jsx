@@ -20,7 +20,7 @@ function Contact() {
           {/* Contact type */}
           <ul>
             {contactInfo.map((contact) => (
-              <li key={contact.name} className='flex flex-row text-xl md:text-2xl items-center'>
+              <li key={contact.name} className='flex flex-row text-xl md:text-2xl items-center font-redhat'>
                 {contact.icon} &nbsp; {contact.name}:
               </li>
             ))}

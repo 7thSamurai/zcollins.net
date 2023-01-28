@@ -1,5 +1,5 @@
 import React from 'react'
-import { RecentArticles, Heading } from '.'
+import { ArticlePreview, Heading } from '.'
 
 const LatestBlogPosts = (props) => (
   <section className='bg-ghost-white'>
@@ -10,7 +10,7 @@ const LatestBlogPosts = (props) => (
       business solutions, and the latest developments in tech.
     </p>
 
-    <RecentArticles path='/blog' {...props}/>
+    <ArticlePreview path='/blog' {...props}/>
   </section>
 )
 

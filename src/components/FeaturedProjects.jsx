@@ -1,5 +1,5 @@
 import React from 'react'
-import { RecentArticles, Heading } from '.'
+import { ArticlePreview, Heading } from '.'
 
 const FeaturedProjects = (props) => (
   <section className='bg-ghost-white'>
@@ -10,7 +10,7 @@ const FeaturedProjects = (props) => (
       Learn how custom software solutions helped to solve my clients' problems and improve their operations.
     </p>
 
-    <RecentArticles path='/projects' {...props}/>
+    <ArticlePreview path='/projects' {...props}/>
   </section>
 )
 

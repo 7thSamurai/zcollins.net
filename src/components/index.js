@@ -2,7 +2,7 @@ import Navbar from "./Navbar";
 import About from "./About";
 import Services from "./Services";
 import Skills from "./Skills";
-import RecentArticles from "./RecentArticles";
+import ArticlePreview from "./ArticlePreview";
 import FeaturedProjects from "./FeaturedProjects";
 import LatestBlogPosts from "./LatestBlogPosts";
 import Contact from "./Contact";
@@ -22,7 +22,7 @@ export {
     About,
     Services,
     Skills,
-    RecentArticles,
+    ArticlePreview,
     FeaturedProjects,
     LatestBlogPosts,
     Contact,

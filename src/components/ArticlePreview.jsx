@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { BsArrowRight } from 'react-icons/bs'
 import { Heading } from '.'
 
-function RecentArticles(props) {
+function ArticlePreview(props) {
   return (
     <div className='grid grid-cols-1 lg:grid-cols-3 py-10 gap-8'>
       {props.articles.map((article) => (
@@ -45,4 +45,4 @@ function RecentArticles(props) {
   )
 }
 
-export default RecentArticles
+export default ArticlePreview

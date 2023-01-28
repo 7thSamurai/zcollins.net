@@ -1,5 +1,4 @@
 import Head from "next/head"
-import styles from "@/src/styles"
 import { getAllBlogPosts } from "@/src/utils/mdx"
 
 export async function getStaticProps() {
@@ -14,7 +13,7 @@ export async function getStaticProps() {
 
 export default function Blog({articles}) {
   return (
-    <div className={`${styles.paddingX}`}>
+    <div>
       <Head>
         <title>Blog - Zach Collins</title>
       </Head>

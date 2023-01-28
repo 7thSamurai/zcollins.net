@@ -1,12 +1,11 @@
 import React from 'react'
-import styles from '../styles'
 import Image from 'next/image'
 import { Heading, Button } from '.'
 import { socialMedia } from '../constants'
 import { BsArrowRight } from 'react-icons/bs'
 
 const About = () => (
-  <section className={`${styles.paddingX} mx-4 bg-ghost-white`}>
+  <section className='mx-4 bg-ghost-white'>
     <div className='text-center'>
       <Heading.H1 className='py-2'>Zach Collins</Heading.H1>
       <Heading.H3 className='py-2 font-normal'>Software Developer</Heading.H3>

@@ -1,10 +1,9 @@
 import Head from "next/head"
-import styles from "../styles"
 import { Button } from "../components"
 
 export default function Custom404() {
   return (
-    <div className={`${styles.paddingX}`}>
+    <div>
       <Head>
         <title>Zach Collins - 404</title>
       </Head>

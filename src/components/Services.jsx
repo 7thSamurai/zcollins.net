@@ -1,11 +1,10 @@
 import React from 'react'
-import styles from '../styles'
 import { services } from '../constants'
 import { Heading, HexIcon } from '.'
 import { BsArrowRight } from 'react-icons/bs'
 
 const Services = () => (
-    <section className={`${styles.paddingX} mb-10 pt-10 pb-6 bg-ghost-white`}>
+    <section className='mb-10 pt-10 pb-6 bg-ghost-white'>
       <Heading.H2 className='text-center'>Services</Heading.H2>
 
       {/* Services list */}

@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import styles from '../styles'
 
 import { About, Services, Skills, FeaturedProjects, LatestBlogPosts, Contact } from '../components'
 import { getAllBlogPosts, getAllProjects } from "@/src/utils/mdx";

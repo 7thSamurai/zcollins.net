@@ -1,9 +1,8 @@
 import React from 'react'
-import styles from '../styles'
 import { RecentArticles, Heading } from '.'
 
 const FeaturedProjects = (props) => (
-  <section className={`${styles.paddingX} bg-ghost-white`}>
+  <section className='bg-ghost-white'>
     <Heading.H2 className='text-center pt-10'>Featured Projects</Heading.H2>
 
     <p className='text-center text-xl my-4 max-w-2xl mx-auto'>

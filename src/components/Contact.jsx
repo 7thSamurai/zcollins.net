@@ -1,11 +1,10 @@
 import React from 'react'
-import styles from '../styles'
 import { contactInfo } from '../constants'
 import { Heading } from '.'
 
 function Contact() {
   return (
-    <section id='contact' className={`${styles.paddingX} bg-ghost-white`}>
+    <section id='contact' className='bg-ghost-white'>
       <div className={'flex justify-between flex-col 2xl:flex-row 2xl:px-20 items-center p-6 bg-ghost-white border border-gray-200 rounded-lg shadow-md hover:bg-gray-100'}>
         <div className='flex flex-col items-center'>
           <Heading.H3 className='text-center mb-6'>Contact Information</Heading.H3>

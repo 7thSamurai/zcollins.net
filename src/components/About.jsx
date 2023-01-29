@@ -42,7 +42,7 @@ const About = () => (
     </div>
 
     <div className=''>
-      <Image/>
+      <Image alt=''/>
     </div>
   </section>
 )

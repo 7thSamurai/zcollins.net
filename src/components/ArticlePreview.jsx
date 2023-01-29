@@ -11,7 +11,7 @@ function ArticlePreview(props) {
           <div>
             {/* Article thumbnail image */}
             <Link href={`${props.path}/${article.meta.slug}`} passHref>
-              <img src={`/images/${article.meta.image}`} className='w-full rounded-lg'/>
+              <img src={`/images/${article.meta.image}`} className='w-full rounded-lg' alt=''/>
             </Link>
 
             {/* Article type */}

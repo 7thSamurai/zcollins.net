@@ -7,7 +7,7 @@ const FeaturedProjects = (props) => (
 
     <p className='text-center text-xl my-4 max-w-2xl mx-auto'>
       Explore my curated collection of featured projects and case studies. 
-      Learn how custom software solutions helped to solve my clients' problems and improve their operations.
+      Learn how custom software solutions helped to solve my clients&rsquo; problems and improve their operations.
     </p>
 
     <ArticlePreview path='/projects' {...props}/>

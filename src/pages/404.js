@@ -10,8 +10,8 @@ export default function Custom404() {
 
       <div className='text-center'>
         <h1 className='mb-4 text-7xl lg:text-9xl font-extrabold text-keppel'>404</h1>
-        <p className='mb-4 text-3xl md:text-4xl font-bold'>Something's missing.</p>
-        <p className='mb-4 text-lg font-light text-eerie-black'>Sorry, we can't find that page.</p>
+        <p className='mb-4 text-3xl md:text-4xl font-bold'>Something&apos;s missing.</p>
+        <p className='mb-4 text-lg font-light text-eerie-black'>Sorry, we can&apos;t find that page.</p>
 
         <a href='/'>
           <Button title='Back to Homepage'/>

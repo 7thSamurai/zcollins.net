@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import Link from 'next/link'
 import { AiOutlineMenu, AiOutlineClose} from 'react-icons/ai'
 import { navLinks } from '../constants'
 import { Button } from '.'
@@ -12,21 +13,21 @@ const Navbar = () => {
   return (
     <nav className='w-full items-center py-3 px-4 flex justify-between'>
       {/* Logo */}
-      <a href='/' className='cursor-pointer ml-[-19px]'>
+      <Link href='/' className='cursor-pointer ml-[-19px]'>
         <Image src={logo} alt='ZC' className='w-[100px] mr-10'/>
-      </a>
+      </Link>
 
       {/* Desktop menu */}
       <div className='sm:flex hidden flex-1'>
         <ul className='list-none items-center flex flex-1 justify-start'>
           {navLinks.map((nav, index) => (
             <li key={nav.name} className={'text-eerie-black hover:text-black cursor-pointer text-[18px] mr-10'} title={nav.name}>
-              <a href={nav.link}>{nav.name}</a>
+              <Link href={nav.link}>{nav.name}</Link>
             </li>
           ))}
         </ul>
 
-        <a href="/#contact"><Button style='justify-end' title='Contact'/></a>
+        <Link href="/#contact"><Button style='justify-end' title='Contact'/></Link>
       </div>
 
       {/* Mobile menu*/}
@@ -43,12 +44,12 @@ const Navbar = () => {
           <ul className='list-none flex flex-col justify-end items-center flex-1 text-white'>
             {navLinks.map((nav, index) => (
               <li key={nav.name} className={'cursor-pointer text-[16px] mb-4'} title={nav.name}>
-                <a href={nav.link}>{nav.name}</a>
+                <Link href={nav.link}>{nav.name}</Link>
               </li>
             ))}
 
             <li>
-              <a href="/#contact"><Button style='justify-end' title='Contact'/></a>
+              <Link href="/#contact"><Button style='justify-end' title='Contact'/></Link>
             </li>
           </ul>
         </div>

@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 import { Heading, Button } from '.'
 import { socialMedia } from '../constants'
 import { BsArrowRight } from 'react-icons/bs'
@@ -24,19 +25,19 @@ const About = () => (
       </p>
 
       <Button title={
-        <a href='/#contact' className='inline-flex items-center'>
+        <Link href='/#contact' className='inline-flex items-center'>
           Hire Me
           <BsArrowRight className='ml-2'/>
-        </a>
+        </Link>
       }/>
     </div>
 
     {/* Social media */}
     <div className='text-5xl flex justify-center gap-16 pt-10 text-roman-silver'>
       {socialMedia.map((social) => (
-        <a key={social.name} title={social.name} href={social.link}>
+        <Link key={social.name} title={social.name} href={social.link}>
           {social.icon}
-        </a>
+        </Link>
       ))}
     </div>
 

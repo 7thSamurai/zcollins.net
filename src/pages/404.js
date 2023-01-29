@@ -1,5 +1,6 @@
 import Head from "next/head"
 import { Button } from "../components"
+import Link from 'next/link'
 
 export default function Custom404() {
   return (
@@ -13,9 +14,9 @@ export default function Custom404() {
         <p className='mb-4 text-3xl md:text-4xl font-bold'>Something&apos;s missing.</p>
         <p className='mb-4 text-lg font-light text-eerie-black'>Sorry, we can&apos;t find that page.</p>
 
-        <a href='/'>
+        <Link href='/'>
           <Button title='Back to Homepage'/>
-        </a>
+        </Link>
       </div>
     </div>
   )

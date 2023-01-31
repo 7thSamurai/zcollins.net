@@ -1,5 +1,6 @@
 import Head from "next/head"
 import { getAllProjects } from "@/src/utils/mdx"
+import { Heading, ArticlePreview } from "@/src/components";
 
 export async function getStaticProps() {
     const articles = await getAllProjects();
@@ -11,20 +12,16 @@ export async function getStaticProps() {
     };
 }
 
-export default function Projects({articles}) {
+export default function Projects(props) {
   return (
     <div>
       <Head>
         <title>Projects - Zach Collins</title>
       </Head>
   
-      <h1 className='font-bold text-4xl text-center'>Projects</h1>
+      <Heading.H1 className='text-center'>Projets</Heading.H1>
 
-      <div>
-        {articles.map((article) => (
-          <h2>{article.meta.title} - {article.meta.about} - {article.meta.readingTime}</h2>
-        ))}
-      </div>
+      <ArticlePreview path='/projects' {...props}/>
     </div>
   )
 }

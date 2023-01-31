@@ -30,7 +30,7 @@ function ArticlePreview(props) {
           <div className='flex flex-wrap justify-between mt-8'>
             {/* Reading time */}
             <p className='text-lg text-roman-silver mr-8 flex-shrink-0'>
-              {article.meta.readingTime} &middot; {new Date(article.meta.publishedAt).toLocaleDateString('en-us', { year:"numeric", month:"short"})}
+              {article.meta.readingTime} &middot; {new Date(article.meta.publishedAt).toLocaleDateString('en-us', { year:"numeric", month:"short", day: "2-digit"})}
             </p>
 
             {/* Link to article page */}

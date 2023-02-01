@@ -7,6 +7,7 @@ import FeaturedProjects from "./FeaturedProjects";
 import LatestBlogPosts from "./LatestBlogPosts";
 import Contact from "./Contact";
 import Footer from "./Footer";
+import Article from "./Article";
 import Button from "./Button";
 import HexIcon from "./HexIcon";
 import Heading from "./Heading";
@@ -27,6 +28,7 @@ export {
     LatestBlogPosts,
     Contact,
     Footer,
+    Article,
     Button,
     HexIcon,
     Heading,

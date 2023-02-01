@@ -19,7 +19,7 @@ export default function Projects(props) {
         <title>Projects - Zach Collins</title>
       </Head>
   
-      <Heading.H1 className='text-center'>Projets</Heading.H1>
+      <Heading.H1 className='text-center'>Projects</Heading.H1>
 
       <ArticlePreview path='/projects' {...props}/>
     </div>

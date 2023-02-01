@@ -1,6 +1,5 @@
-import { MDXRemote } from 'next-mdx-remote'
 import { serializeMdx, getBlogPostSlugs, getBlogPostFromSlug } from "@/src/utils/mdx";
-import { mdxComponents } from '@/src/components';
+import { Article } from '@/src/components';
 
 export async function getStaticPaths() {
     const paths = (await getBlogPostSlugs()).map((slug) => ({
@@ -27,15 +26,8 @@ export async function getStaticProps({params}) {
     };
 }
 
-export default function BlogPost({source, meta}) {
+export default function BlogPost(props) {
     return (
-      <div>
-        <h1>{meta.title}</h1>
-        <h2>{meta.about}</h2>
-        <p>{meta.publishedAt}</p>
-        <p>{meta.readingTime}</p>
-
-        <MDXRemote {...source} components={mdxComponents}/>
-      </div>
+      <Article {...props}/>
     );
 }

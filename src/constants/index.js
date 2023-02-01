@@ -182,5 +182,5 @@ export const contactInfo = [
     },
 ];
 
-export const projects_description = 'Explore my curated collection of featured projects and case studies. Learn how custom software solutions helped to solve my clients&rsquo; problems and improve their operations.';
-export const blog_description = 'Browse my blog where I discuss a variety of topics including programming, business solutions, and the latest developments in tech.';
+export const projects_description = <>Explore my curated collection of featured projects and case studies. Learn how custom software solutions helped to solve my clients&rsquo; problems and improve their operations.</>;
+export const blog_description = <>Browse my blog where I discuss a variety of topics including programming, business solutions, and the latest developments in tech.</>;

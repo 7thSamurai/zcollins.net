@@ -1,6 +1,7 @@
 import Head from "next/head"
 import { getAllProjects } from "@/src/utils/mdx"
 import { Heading, ArticlePreview } from "@/src/components";
+import { projects_description } from "@/src/constants";
 
 export async function getStaticProps() {
     const articles = await getAllProjects();
@@ -20,6 +21,10 @@ export default function Projects(props) {
       </Head>
   
       <Heading.H1 className='text-center'>Projects</Heading.H1>
+
+      <p className='text-center text-xl mt-8 max-w-2xl mx-auto'>
+        {projects_description}
+      </p>
 
       <ArticlePreview path='/projects' {...props}/>
     </div>

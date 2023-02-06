@@ -1,5 +1,4 @@
 import { Html, Head, Main, NextScript } from 'next/document'
-import { Navbar, Footer } from '../components'
 
 export default function Document() {
   return (
@@ -10,14 +9,9 @@ export default function Document() {
         <link rel='icon' type='image/png' sizes='96x96' href='/favicon-96x96.png'/>
       </Head>
 
+
       <body className='bg-ghost-white'>
-        <Navbar/>
-
-        <div className='flex flex-col justify-between min-h-screen px-4 md:px-20 lg:px-40 xl:px-60 pt-28'>
-          <Main/>
-          <Footer/>
-        </div>
-
+        <Main/>
         <NextScript/>
       </body>
     </Html>

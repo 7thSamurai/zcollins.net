@@ -34,16 +34,16 @@ export const navLinks = [
         link: '/#about',
     },
     {
-        name: 'Blog',
-        link: '/blog',
-    },
-    {
-        name: 'Resume',
-        link: '/resume',
+        name: 'Services',
+        link: '/#services',
     },
     {
         name: 'Projects',
         link: '/projects',
+    },
+    {
+        name: 'Blog',
+        link: '/blog',
     },
 ];
 

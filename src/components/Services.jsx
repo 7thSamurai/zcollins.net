@@ -4,7 +4,7 @@ import { Heading, HexIcon } from '.'
 import { BsArrowRight } from 'react-icons/bs'
 
 const Services = () => (
-    <section className='mb-10 pt-10 pb-6 bg-ghost-white'>
+    <section id='services' className='mb-10 pt-10 pb-6 bg-ghost-white'>
       <Heading.H2 className='text-center'>Services</Heading.H2>
 
       {/* Services list */}

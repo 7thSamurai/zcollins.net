@@ -24,12 +24,14 @@ const About = () => (
         how I can assist you in achieving your goals.
       </p>
 
-      <Button title={
-        <Link href='/#contact' className='inline-flex items-center'>
-          Hire Me
-          <BsArrowRight className='ml-2'/>
-        </Link>
-      }/>
+      <Link href='/#contact'>
+        <Button styles='inline-flex items-center' title={
+          <>
+            Hire Me
+            <BsArrowRight className='ml-2'/>
+          </>
+        }/>
+      </Link>
     </div>
 
     {/* Social media */}

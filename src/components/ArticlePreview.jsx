@@ -34,7 +34,7 @@ function ArticlePreview(props) {
             </p>
 
             {/* Link to article page */}
-            <Link href={`${props.path}/${article.meta.slug}`} passHref className='inline-flex items-center text-lg text-keppel hover:underline cursor-pointer'>
+            <Link href={`${props.path}/${article.meta.slug}`} passHref className='inline-flex items-center text-lg text-keppel hover:underline hover:text-teal-600 cursor-pointer'>
               Read More
               <BsArrowRight className='ml-2'/>
             </Link>

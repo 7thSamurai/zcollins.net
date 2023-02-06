@@ -11,7 +11,7 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
 
   return (
-    <nav className='w-full items-center py-1 px-4 flex justify-between fixed top-0 z-50 bg-ghost-white'>
+    <nav className='w-full items-center py-1 px-4 flex justify-between fixed top-0 z-50 bg-ghost-white shadow-md'>
       {/* Logo */}
       <Link href='/' className='cursor-pointer ml-[-19px]'>
         <Image src={logo} alt='ZC' className='w-[100px] mr-10'/>

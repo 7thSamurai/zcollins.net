@@ -13,7 +13,7 @@ export default function Document() {
       <body className='bg-ghost-white'>
         <Navbar/>
 
-        <div className='flex flex-col justify-between min-h-screen px-4 md:px-20 lg:px-40 xl:px-60'>
+        <div className='flex flex-col justify-between min-h-screen px-4 md:px-20 lg:px-40 xl:px-60 pt-28'>
           <Main/>
           <Footer/>
         </div>

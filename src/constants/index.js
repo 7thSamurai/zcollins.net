@@ -49,14 +49,14 @@ export const navLinks = [
 
 export const socialMedia = [
     {
-        name: 'GitHub',
-        icon: <AiFillGithub/>,
-        link: 'https://github.com/7thSamurai',
-    },
-    {
         name: 'Twitter',
         icon: <AiFillTwitterCircle/>,
         link: 'https://twitter.com/zcollinsdev',
+    },
+    {
+        name: 'GitHub',
+        icon: <AiFillGithub/>,
+        link: 'https://github.com/7thSamurai',
     },
     {
         name: 'LinkedIn',

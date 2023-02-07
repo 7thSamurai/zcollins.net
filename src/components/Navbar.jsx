@@ -26,7 +26,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className={`w-full items-center py-1 px-4 flex justify-between fixed top-0 z-50 bg-ghost-white ${scroll > 0 ? 'shadow' : 'shadow-none'}`}>
+    <nav className={`w-full items-center py-1 px-4 flex justify-between fixed top-0 z-50 bg-ghost-white ${scroll > 0 ? 'shadow' : 'shadow-none'} transition-shadow duration-300 ease-in-out`}>
       {/* Logo */}
       <Link href='/' className='cursor-pointer ml-[-19px]'>
         <Image src={logo} alt='ZC' className='w-[100px] mr-10'/>

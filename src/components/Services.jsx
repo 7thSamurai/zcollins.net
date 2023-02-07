@@ -10,7 +10,7 @@ const Services = () => (
       {/* Services list */}
       <div className='grid grid-cols-1 lg:grid-cols-2 gap-12 gap-x-20 mt-10'>
         {services.map((service) => (
-          <div key={service.name} className='flex flex-row justify-between items-center'>
+          <div key={service.name} className='flex flex-row justify-between items-center bg-keppel bg-opacity-0 hover:bg-opacity-5 rounded-lg transition-colors duration-200'>
 
             {/* Service icon */}
             <a href={service.link}>
@@ -25,7 +25,7 @@ const Services = () => (
               <p className='text-eerie-black text-xl py-4'>{service.desc}</p>
 
               {/* Details */}
-              <a href={service.link} className='inline-flex items-center pt-4 hover:underline'>
+              <a href={service.link} className='inline-flex w-fit items-center pt-4 hover:underline'>
                 View Details
                 <BsArrowRight className='ml-2'/>
               </a>

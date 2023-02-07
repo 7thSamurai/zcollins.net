@@ -24,10 +24,19 @@ export default function Home(props) {
       
       <main>
         <About/>
+
+        <div className='pt-10 pb-20'><hr className='border-keppel absolute left-0 w-full'/></div>
+
         <Services/>
         <Skills/>
+
+        <hr className='border-keppel my-20'/>
+
         <FeaturedProjects articles={props.projects}/>
         <LatestBlogPosts articles={props.posts}/>
+
+        <div className='pt-20 pb-20'><hr className='border-keppel absolute left-0 w-full'/></div>
+
         <Contact/>
       </main>
     </div>

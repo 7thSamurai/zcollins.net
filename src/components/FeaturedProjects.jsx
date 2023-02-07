@@ -5,7 +5,7 @@ import { projects_description } from '../constants'
 
 const FeaturedProjects = (props) => (
   <section className='bg-ghost-white'>
-    <Heading.H2 className='text-center pt-10'>
+    <Heading.H2 className='text-center'>
       <Link href='/projects' title='View all Projects'>Featured Projects</Link>
     </Heading.H2>
 

@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { FiMenu, FiX } from 'react-icons/fi'
 import { navLinks } from '../constants'
@@ -10,8 +10,23 @@ const Navbar = () => {
   {/* Mobile drop-down menu status */}
   const [toggle, setToggle] = useState(false);
 
+  {/* Scrolling status */}
+  const [scroll, setScroll] = useState(0);
+
+  useEffect(() => {
+    const updateScroll = () => {
+      setScroll(window.scrollY);
+    };
+
+    window.addEventListener("scroll", updateScroll);
+    
+    return () => {
+      window.removeEventListener("scroll", updateScroll);
+    };
+  }, []);
+
   return (
-    <nav className='w-full items-center py-1 px-4 flex justify-between fixed top-0 z-50 bg-ghost-white border-b border-gray-200'>
+    <nav className={`w-full items-center py-1 px-4 flex justify-between fixed top-0 z-50 bg-ghost-white ${scroll > 0 ? 'shadow' : 'shadow-none'}`}>
       {/* Logo */}
       <Link href='/' className='cursor-pointer ml-[-19px]'>
         <Image src={logo} alt='ZC' className='w-[100px] mr-10'/>

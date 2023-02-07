@@ -19,7 +19,7 @@ const Footer = () => (
       {/* Social Media */}
       <div className='flex flex-row mt-6 md:mt-0 mb-10'>
         {socialMedia.map((social, index) => (
-          <a key={social.name} title={social.name} href={social.link} className={`text-keppel hover:text-teal-600 text-[32px] object-contain ${index !== socialMedia.length -1 ? 'mr-6' : 'mr-0'}`}>
+          <a key={social.name} title={social.name} href={social.link} className={`text-roman-silver hover:text-keppel transition-colors duration-200 text-[32px] object-contain ${index !== socialMedia.length -1 ? 'mr-6' : 'mr-0'}`}>
             {social.icon}
           </a>
         ))}

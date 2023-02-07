@@ -37,7 +37,7 @@ const About = () => (
     {/* Social media */}
     <div className='text-5xl flex justify-center gap-16 pt-10 text-roman-silver'>
       {socialMedia.map((social) => (
-        <Link key={social.name} title={social.name} href={social.link}>
+        <Link key={social.name} title={social.name} href={social.link} className='hover:text-keppel transition-colors duration-200'>
           {social.icon}
         </Link>
       ))}

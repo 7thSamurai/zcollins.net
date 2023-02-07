@@ -17,7 +17,7 @@ const LatestBlogPosts = (props) => (
     <ArticlePreview path='/blog' {...props}/>
 
     <Link href='/projects' className='justify-center inline-flex items-center text-xl text-keppel hover:underline hover:text-teal-600'>
-      View all Blog Projects
+      View all Blog Posts
       <BsArrowRight className='ml-2'/>
     </Link>
   </section>

@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import Link from 'next/link'
-import { AiOutlineMenu, AiOutlineClose} from 'react-icons/ai'
+import { FiMenu, FiX } from 'react-icons/fi'
 import { navLinks } from '../constants'
 import { Button } from '.'
 import Image from 'next/image'
@@ -11,7 +11,7 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
 
   return (
-    <nav className='w-full items-center py-1 px-4 flex justify-between fixed top-0 z-50 bg-ghost-white shadow-md'>
+    <nav className='w-full items-center py-1 px-4 flex justify-between fixed top-0 z-50 bg-ghost-white border-b border-gray-200'>
       {/* Logo */}
       <Link href='/' className='cursor-pointer ml-[-19px]'>
         <Image src={logo} alt='ZC' className='w-[100px] mr-10'/>
@@ -33,23 +33,23 @@ const Navbar = () => {
       {/* Mobile menu*/}
       <div className='sm:hidden flex flex-1 justify-end items-center'>
         {/* Drop down button*/}
-        <div onClick={() => setToggle((prev) => !prev)}>
+        <div className='text-roman-silver cursor-pointer' onClick={() => setToggle((prev) => !prev)}>
           {toggle
-            ? <AiOutlineClose className='w-[28px] h-[28px] object-contain'/>
-            : <AiOutlineMenu className='w-[28px] h-[28px] object-contain'/>
+            ? <FiX className='w-[28px] h-[28px] object-contain'/>
+            : <FiMenu className='w-[28px] h-[28px] object-contain'/>
           }
         </div>
 
-        <div className={`${toggle ? 'flex' : 'hidden'} p-6 bg-gradient-to-br from-gray-900 to-gray-800 absolute top-20 right-0 mx-4 my-2 min-w-[140px] rounded-xl sidebar`}>
-          <ul className='list-none flex flex-col justify-end items-center flex-1 text-white'>
+        <div className={`${toggle ? 'flex' : 'hidden'} bg-ghost-white absolute top-[70px] right-0 w-full border-b border-gray-200`}>
+          <ul className='list-none flex flex-col justify-end flex-1 bg-gray-50 border border-gray-100 rounded-lg p-4 m-4'>
             {navLinks.map((nav, index) => (
-              <li key={nav.name} className={'cursor-pointer text-[16px] mb-4'} title={nav.name}>
-                <Link href={nav.link}>{nav.name}</Link>
+              <li key={nav.name} className='cursor-pointer text-[16px] py-2 pl-3 rounded hover:bg-gray-100 text-eerie-black font-inter'>
+                <Link href={nav.link} onClick={() => setToggle(false)} className='block w-full'>{nav.name}</Link>
               </li>
             ))}
 
-            <li>
-              <Link href="/#contact"><Button style='justify-end' title='Contact'/></Link>
+            <li className='cursor-pointer text-[16px] py-2 pl-3 rounded bg-keppel text-white font-inter'>
+              <Link href='/#contact' onClick={() => setToggle(false)} className='block w-full'>Contact</Link>
             </li>
           </ul>
         </div>

@@ -7,7 +7,7 @@ const Footer = () => (
       {/* Copyright notice */}
       <div>
         <p className='text-center'>
-          Copyright &copy; {(new Date().getFullYear())} Zachary Collins.
+          Copyright &copy; {(new Date().getFullYear())} Zachary Collins
         </p>
       </div>
 

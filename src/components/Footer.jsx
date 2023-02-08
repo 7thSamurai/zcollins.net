@@ -13,7 +13,7 @@ const Footer = () => (
 
       {/* Contact info */}
       <div>
-        <a href = 'mailto:contact@zcollins.net' className='text-center hover:underline'>contact@zcollins.net</a>
+        <a href = 'mailto:contact@zcollins.net' className='text-center hover:underline hover:text-black'>contact@zcollins.net</a>
       </div>
 
       {/* Social Media */}

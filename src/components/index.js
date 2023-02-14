@@ -11,6 +11,7 @@ import Article from "./Article";
 import Button from "./Button";
 import HexIcon from "./HexIcon";
 import Heading from "./Heading";
+import Service from "./Service";
 
 const mdxComponents = {
     h1: Heading.H1,
@@ -32,5 +33,6 @@ export {
     Button,
     HexIcon,
     Heading,
+    Service,
     mdxComponents,
 };

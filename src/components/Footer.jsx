@@ -12,7 +12,7 @@ const Footer = () => (
       </div>
 
       {/* Contact info */}
-      <div>
+      <div title='Contact email'>
         <a href = 'mailto:contact@zcollins.net' className='text-center hover:underline hover:text-black'>contact@zcollins.net</a>
       </div>
 

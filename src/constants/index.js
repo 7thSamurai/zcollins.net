@@ -32,18 +32,22 @@ export const navLinks = [
     {
         name: 'About',
         link: '/#about',
+        title: 'View about section',
     },
     {
         name: 'Services',
         link: '/#services',
+        title: 'View available services',
     },
     {
         name: 'Projects',
         link: '/projects',
+        title: 'View featured projects',
     },
     {
         name: 'Blog',
         link: '/blog',
+        title: 'View personal blog',
     },
 ];
 

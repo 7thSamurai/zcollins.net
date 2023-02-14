@@ -18,7 +18,7 @@ const Service = (props) => (
       </div>
 
       {/* Call to action */}
-      <Link href='/#contact' className='flex justify-center py-8'>
+      <Link href='/#contact' className='flex justify-center py-8' title='Goto contact information'>
         <Button styles='inline-flex items-center' title={
           <>
             Hire Me
@@ -28,7 +28,7 @@ const Service = (props) => (
       </Link>
 
       {/* Back */}
-      <Link href='/#services' className='inline-flex w-fit items-center hover:underline text-keppel'>
+      <Link href='/#services' className='inline-flex w-fit items-center hover:underline text-keppel' title='Go back to services section'>
         <BsArrowLeft className='mr-2'/>
         Back to Services
       </Link>

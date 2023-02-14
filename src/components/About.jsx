@@ -24,7 +24,7 @@ const About = () => (
         how I can assist you in achieving your goals.
       </p>
 
-      <Link href='/#contact'>
+      <Link href='/#contact' title='Goto contact information'>
         <Button styles='inline-flex items-center' title={
           <>
             Hire Me

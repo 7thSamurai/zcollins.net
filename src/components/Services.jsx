@@ -13,7 +13,7 @@ const Services = () => (
           <div key={service.name} className='flex flex-row justify-between items-center bg-keppel bg-opacity-0 hover:bg-opacity-5 rounded-lg transition-colors duration-200'>
 
             {/* Service icon */}
-            <a href={service.link}>
+            <a href={service.link} title={`Learn more about ${service.name}`}>
               <HexIcon icon={service.icon}/>
             </a>
 
@@ -25,7 +25,7 @@ const Services = () => (
               <p className='text-eerie-black text-xl py-4'>{service.desc}</p>
 
               {/* Details */}
-              <a href={service.link} className='inline-flex w-fit items-center pt-4 hover:underline'>
+              <a href={service.link} className='inline-flex w-fit items-center pt-4 hover:underline' title={`Learn more about ${service.name}`}>
                 View Details
                 <BsArrowRight className='ml-2'/>
               </a>

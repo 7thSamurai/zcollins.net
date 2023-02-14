@@ -36,13 +36,13 @@ const Navbar = () => {
       <div className='sm:flex hidden flex-1'>
         <ul className='list-none items-center flex flex-1 justify-start'>
           {navLinks.map((nav, index) => (
-            <li key={nav.name} className={'text-eerie-black hover:text-black cursor-pointer text-[18px] mr-10'} title={nav.name}>
+            <li key={nav.name} className={'text-eerie-black hover:text-black cursor-pointer text-[18px] mr-10'} title={nav.title}>
               <Link href={nav.link}>{nav.name}</Link>
             </li>
           ))}
         </ul>
 
-        <Link href="/#contact"><Button style='justify-end' title='Contact'/></Link>
+        <Link href="/#contact" title='Goto contact information'><Button style='justify-end' title='Contact'/></Link>
       </div>
 
       {/* Mobile menu*/}

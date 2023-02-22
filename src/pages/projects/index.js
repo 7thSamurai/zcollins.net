@@ -1,10 +1,10 @@
 import Head from "next/head"
-import { getAllProjects } from "@/src/utils/mdx"
+import { getAllProjects, padArticles } from "@/src/utils/mdx"
 import { Heading, ArticlePreview } from "@/src/components";
 import { projects_description } from "@/src/constants";
 
 export async function getStaticProps() {
-    const articles = await getAllProjects();
+    const articles = padArticles(await getAllProjects(), 'Project');
 
     return {
         props: {

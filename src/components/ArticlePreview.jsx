@@ -28,7 +28,7 @@ function ArticlePreview(props) {
 
               {/* Reading time */}
               <p className='text-lg text-roman-silver mt-8 flex-shrink-0'>
-                {article.meta.readingTime} &middot; {new Date(article.meta.publishedAt).toLocaleDateString('en-us', { year:"numeric", month:"short", day: "numeric"})}
+                {article.meta.readingTime} &middot; {article.meta.publishedAt}
               </p> 
             </div>
           </div>

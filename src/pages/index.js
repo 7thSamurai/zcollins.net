@@ -1,11 +1,11 @@
 import Head from 'next/head'
 
 import { About, Services, Skills, FeaturedProjects, LatestBlogPosts, Contact } from '../components'
-import { getAllBlogPosts, getAllProjects } from "@/src/utils/mdx";
+import { getAllBlogPosts, getAllProjects, padArticles } from "@/src/utils/mdx";
 
 export async function getStaticProps() {
-  const posts = await getAllBlogPosts();
-  const projects = await getAllProjects();
+  const posts = padArticles(await getAllBlogPosts(), 'Blost Post');
+  const projects = padArticles(await getAllProjects(), 'Project');
 
   return {
       props: {

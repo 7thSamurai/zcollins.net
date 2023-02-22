@@ -44,12 +44,12 @@ async function getArticleFromSlug(slug, articlesPath) {
     return {
         content,
         meta: {
+            ...data,
             slug,
             title: data.title,
             about: data.about,
-            publishedAt: data.publishedAt,
+            publishedAt: new Date(data.publishedAt).toLocaleDateString('en-us', { year:"numeric", month:"short", day: "2-digit"}),
             readingTime: readingTime(source).text,
-            ...data,
         },
     };
 }
@@ -68,12 +68,12 @@ async function getAllArticles(articlesPath) {
             {
                 content,
                 meta: {
+                    ...data,
                     slug: slug.replace(/\.mdx$/, ''),
                     title: data.title,
                     about: data.about,
-                    publishedAt: data.publishedAt,
+                    publishedAt: new Date(data.publishedAt).toLocaleDateString('en-us', { year:"numeric", month:"short", day: "2-digit"}),
                     readingTime: readingTime(source).text,
-                    ...data,
                 }
             },
             ...allArticles,
@@ -84,6 +84,28 @@ async function getAllArticles(articlesPath) {
     return allArticles.sort((a,b) => (
         new Date(b.meta.publishedAt) - new Date(a.meta.publishedAt)
     ));
+}
+
+// Adds coming soon articles
+export function padArticles(articles, type) {
+    if (articles.length < 3) {
+        for (let i = 0; i < articles.length % 3; i++) {
+            articles.push({
+                content: '',
+                meta: {
+                    slug: '',
+                    title: 'Article Coming Soon',
+                    about: 'More content coming in the near future!',
+                    image: '/coming_soon.png',
+                    readingTime: '0 min read',
+                    publishedAt: new Date().getFullYear().toString(),
+                    type,
+                }
+            });
+        }
+    }
+
+    return articles;
 }
 
 export async function getBlogPostSlugs() { return getSlugs(blogPath); }

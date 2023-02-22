@@ -15,7 +15,7 @@ const Article = ({source, meta}) => (
 
         {/* Reading time */}
         <p className='text-sm text-roman-silver'>
-            {meta.readingTime} &middot; {new Date(meta.publishedAt).toLocaleDateString('en-us', { year:"numeric", month:"short", day: "2-digit"})}
+            {meta.readingTime} &middot; {meta.publishedAt}
         </p>
 
         <div className='mt-12'>

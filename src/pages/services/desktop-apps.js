@@ -6,7 +6,7 @@ function DesktopApps() {
   return (
     <Service title='Custom Desktop Application Development'>
       <p className='py-2'>
-        In today's modern and rapidly changing business world, companies often employ custom software solutions to help automate processes, boost efficiency, and streamline their internal operations. 
+        In today&apos;s modern and rapidly changing business world, companies often employ custom software solutions to help automate processes, boost efficiency, and streamline their internal operations. 
         In many cases, this can be achieved by using custom-built desktop applications. 
         A desktop application is a type of specialized  computer software that runs on PCs and laptops. 
         These applications can be specifically designed and developed for a particular client per their requirements to meet their unique needs.
@@ -21,7 +21,7 @@ function DesktopApps() {
       <p className='py-2'>
         Custom desktop applications can be used to automate many different types of repetitive computer tasks, freeing up your valuable time to focus on more critical and essential duties. 
         For example, a custom desktop application could be used for automatic data entry, report generation, or inventory management. 
-        In your business alone, it's highly likely that there are numerous everyday tasks that could be automated away, thus allowing your employees to work more efficiently and productively.
+        In your business alone, it&apos;s highly likely that there are numerous everyday tasks that could be automated away, thus allowing your employees to work more efficiently and productively.
       </p>
 
       <Heading.H2 className='my-4'>Scalability</Heading.H2>
@@ -39,18 +39,18 @@ function DesktopApps() {
 
       <Heading.H2 className='my-4'>Improved User Experience</Heading.H2>
       <p className='py-2'>
-        Custom desktop applications can be designed with your employees in mind, ensuring a user-friendly interface, an intuitive layout, and straightforward navigation, completely customized to your business's needs and usage.
+        Custom desktop applications can be designed with your employees in mind, ensuring a user-friendly interface, an intuitive layout, and straightforward navigation, completely customized to your business&apos;s needs and usage.
         This helps to ensure an enjoyable user experience, which results in increased productivity and satisfaction among your employees.
       </p>
 
       <Heading.H2 className='my-4'>Conclusion</Heading.H2>
       <p className='py-2'>
         Custom desktop applications offer businesses numerous benefits and improvements, including but not limited to task automation, multi-platform applications, software scalability, and improved user experience. 
-        As a experienced software developer, I offer effective and robust software solutions that are tailored to your business's specific needs and use cases, helping you achieve your goals and stay one step ahead of the competition.
+        As a experienced software developer, I offer effective and robust software solutions that are tailored to your business&apos;s specific needs and use cases, helping you achieve your goals and stay one step ahead of the competition.
       </p>
 
       <p className='py-2'>
-        If you're looking to streamline your operations and increase efficiency, please do not hesitate to contact me to discuss and learn more about how I may assist your business by providing specialized software solutions via custom desktop applications!
+        If you&apos;re looking to streamline your operations and increase efficiency, please do not hesitate to contact me to discuss and learn more about how I may assist your business by providing specialized software solutions via custom desktop applications!
       </p>
     </Service>
   );

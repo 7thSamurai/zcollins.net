@@ -7,6 +7,7 @@ const Article = ({source, meta}) => (
   <div>
     <Head>
       <title>{meta.title}</title>
+      <meta name='description' content={meta.about}/> 
     </Head>
 
     <article className='mx-auto 2xl:w-4/5'>

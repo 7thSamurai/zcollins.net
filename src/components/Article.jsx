@@ -6,7 +6,7 @@ import { Heading, mdxComponents } from '@/src/components';
 const Article = ({source, meta}) => (
   <div>
     <Head>
-      <title>{meta.title}</title>
+      <title>{meta.title} - Zach Collins</title>
       <meta name='description' content={meta.about}/> 
     </Head>
 

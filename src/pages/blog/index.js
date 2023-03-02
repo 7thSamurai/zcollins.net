@@ -18,6 +18,7 @@ export default function Blog(props) {
     <div>
       <Head>
         <title>Blog - Zach Collins</title>
+        <meta name='description' content='My personal blog as a Freelance Software Developer. Sharing my journey and experiences with articles about coding, technology, and business solutions.'/> 
       </Head>
   
       <Heading.H1 className='text-center'>Blog</Heading.H1>

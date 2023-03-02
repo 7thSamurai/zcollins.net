@@ -18,6 +18,7 @@ export default function Projects(props) {
     <div>
       <Head>
         <title>Projects - Zach Collins</title>
+        <meta name="description" content="My curated selection of featured projects and case studies of work I've done as a Freelance Software Developer."/>
       </Head>
   
       <Heading.H1 className='text-center'>Projects</Heading.H1>

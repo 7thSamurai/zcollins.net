@@ -3,7 +3,7 @@ import { Service, Heading } from '@/src/components';
 
 function DatabaseDesign() {
   return (
-    <Service title='Database Design'>
+    <Service title='Database Design' meta='Freelance Software Developer offering custom database design and implementation services for business applications.'>
       <p className='py-2'>
         In this modern high-tech age, business heavily rely on using computers for storing, organizing, and processing vast amounts of data to keep their operations running.
         Computers achieve this great technological feat by employing extremely complex and advance software systems known as databases.

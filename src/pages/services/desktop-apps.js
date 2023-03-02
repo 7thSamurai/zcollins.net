@@ -4,7 +4,7 @@ import Head from 'next/head';
 
 function DesktopApps() {
   return (
-    <Service title='Custom Desktop Application Development'>
+    <Service title='Custom Desktop Application Development' meta='Freelance Software Developer offering services to develop native desktop applications for Windows, Mac, and Linux systems that will streamline your business!'>
       <p className='py-2'>
         In today&apos;s modern and rapidly changing business world, companies often employ custom software solutions to help automate processes, boost efficiency, and streamline their internal operations. 
         In many cases, this can be achieved by using custom-built desktop applications. 

@@ -7,7 +7,7 @@ import { BsArrowLeft, BsArrowRight } from 'react-icons/bs'
 const Service = (props) => (
   <>
     <Head>
-      <title>{props.title} Service - Zach Collins</title>
+      <title>{`${props.title} Service - Zach Collins`}</title>
       <meta name='description' content={props.meta}/> 
     </Head>
 

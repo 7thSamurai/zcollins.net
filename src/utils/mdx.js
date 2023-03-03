@@ -56,7 +56,9 @@ async function getArticleFromSlug(slug, articlesPath) {
 
 /* Gets a list of all the article's content and metadata in a directory */
 async function getAllArticles(articlesPath) {
-    const articles = fs.readdirSync(articlesPath);
+    const articles = fs.readdirSync(articlesPath).filter(file => {
+        return path.extname(file).toLowerCase() === '.mdx';
+    });
     
     /* Get all the articles */
     const allArticles = articles.reduce((allArticles, slug) => {

@@ -25,10 +25,12 @@ const Services = () => (
               <p className='text-eerie-black text-xl py-4'>{service.desc}</p>
 
               {/* Details */}
+              {/*
               <a href={service.link} className='inline-flex w-fit items-center pt-4 hover:underline' title={`Learn more about ${service.name}`}>
                 View Details
                 <BsArrowRight className='ml-2'/>
               </a>
+              */}
             </div>
           </div>
         ))}

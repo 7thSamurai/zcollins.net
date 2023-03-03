@@ -20,7 +20,7 @@ export default function Home(props) {
     <div>
       <Head>
         <title>Zach Collins - Freelance Software Developer For Hire</title>
-        <meta name='description' content='Freelance software developer specializing in Desktop Applications and Back-End Development. Turning your ideas into reality through custom software solutions!'/>
+        <meta name='description' content='Freelance C++ and Python developer specializing in Desktop Apps and Back-End Development. Turning your ideas into reality through custom software solutions!'/>
       </Head>
       
       <main>

@@ -97,7 +97,7 @@ export function padArticles(articles, type) {
                 slug: '',
                 title: 'Article Coming Soon',
                 about: 'More content coming in the near future!',
-                image: '/coming_soon.png',
+                image: 'coming_soon.png',
                 readingTime: '0 min read',
                 publishedAt: new Date().getFullYear().toString(),
                 type,

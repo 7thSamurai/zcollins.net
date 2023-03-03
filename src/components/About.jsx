@@ -6,7 +6,7 @@ import { socialMedia } from '../constants'
 import { BsArrowRight } from 'react-icons/bs'
 
 const About = () => (
-  <section id='about' className='mx-4 bg-ghost-white'>
+  <section id='about' className='sm:mx-4 bg-ghost-white'>
     <div className='text-center'>
       <Heading.H1 className='py-2'>Zach Collins</Heading.H1>
       <Heading.H3 className='py-2 font-normal'>Software Developer</Heading.H3>
@@ -16,7 +16,7 @@ const About = () => (
         I am a skilled and knowledgeable independent contractor and freelance developer.
         I specialize in creating custom software solutions to automate and optimize businesses
         with a focus on desktop applications and back-end development.
-        Delivering custom, high-quality software systems to turn your ideas into reality!
+        Delivering custom, high-quality software systems to <b>turn your ideas into reality!</b>
       </p>
       <p className='text-md pb-5 leading-8 text-eerie-black md:text-xl max-w-2xl mx-auto'>
         If you are seeking a professional developer, please do not hesitate to reach out and contact me.

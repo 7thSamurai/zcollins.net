@@ -14,6 +14,17 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       
+      - name: Setup NextJS
+        uses: actions/setup-node@v2
+        with:
+          node-version: 16
+          cache: npm
+
+      - name: Build site
+        run: |
+          npm ci
+          npm run build
+
       - name: S3 Sync
         uses: jakejarvis/s3-sync-action@master
         with:
@@ -23,7 +34,7 @@ jobs:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           AWS_REGION: 'us-east-1'
-          SOURCE_DIR: 'site'
+          SOURCE_DIR: 'out'
         
       - name: Invalidate CloudFront
         uses: chetan/invalidate-cloudfront-action@v2

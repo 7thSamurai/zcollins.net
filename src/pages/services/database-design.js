@@ -42,12 +42,12 @@ function DatabaseDesign() {
         With this knowledge I will then start working on designing the layout of how the information will actually be organized in the database.
       </p>
       <p className='py-2'>
-        Additionally, I will discuss with you the various hosting options available, such as <a className='hover:text-black hover:underline font-bold' href='https://aws.amazon.com/'>Amazon's AWS</a> or <a className='hover:text-black hover:underline font-bold' href='https://azure.microsoft.com/'>Microsoft's Azure</a>, and which one best suites your needs and your budget.
+        Additionally, I will discuss with you the various hosting options available, such as <a className='hover:text-black hover:underline font-bold' href='https://aws.amazon.com/'>Amazon&apos;s AWS</a> or <a className='hover:text-black hover:underline font-bold' href='https://azure.microsoft.com/'>Microsoft&apos;s Azure</a>, and which one best suites your needs and your budget.
       </p>
 
       <Heading.H3 className='my-2'>Implementation</Heading.H3>
       <p className='py-2'>
-        After I've designed the database, I will help you setup any necessary hosting accounts, and get a database instance running.
+        After I&apos;ve designed the database, I will help you setup any necessary hosting accounts, and get a database instance running.
         Then I will handle running all the necessary commands to start creating and populating the database tables.
       </p>
       <p className='py-2'>

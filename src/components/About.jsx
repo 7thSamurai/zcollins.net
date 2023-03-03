@@ -13,7 +13,7 @@ const About = () => (
 
       {/* About me summary */}
       <p className='text-md py-5 leading-8 text-eerie-black md:text-xl max-w-2xl mx-auto'>
-        Hi, I'm Zach! I am a skilled and knowledgeable independent contractor and freelance developer.
+        Hi, I&apos;m Zach! I am a skilled and knowledgeable independent contractor and freelance developer.
         I specialize in creating custom software solutions to automate and optimize businesses
         with a focus on desktop applications and back-end development.
         Delivering custom, high-quality software systems to <b>turn your ideas into reality!</b>

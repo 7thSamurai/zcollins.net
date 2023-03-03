@@ -88,21 +88,19 @@ async function getAllArticles(articlesPath) {
 
 // Adds coming soon articles
 export function padArticles(articles, type) {
-    if (articles.length < 3) {
-        for (let i = 0; i < articles.length % 3; i++) {
-            articles.push({
-                content: '',
-                meta: {
-                    slug: '',
-                    title: 'Article Coming Soon',
-                    about: 'More content coming in the near future!',
-                    image: '/coming_soon.png',
-                    readingTime: '0 min read',
-                    publishedAt: new Date().getFullYear().toString(),
-                    type,
-                }
-            });
-        }
+    while (articles.length < 3) {
+        articles.push({
+            content: '',
+            meta: {
+                slug: '',
+                title: 'Article Coming Soon',
+                about: 'More content coming in the near future!',
+                image: '/coming_soon.png',
+                readingTime: '0 min read',
+                publishedAt: new Date().getFullYear().toString(),
+                type,
+            }
+        });
     }
 
     return articles;
